@@ -1,0 +1,697 @@
+{
+  "stats": {
+    "NET-Actions": {
+      "value": 2,
+      "type": "number",
+      "section": "Netrunner",
+      "expression": "Interface-score < 4 ? 1 : Interface-score < 7 ? 2 : Interface-score < 10 ? 3 : 4"
+    },
+    "Luck-Points": {
+      "value": "",
+      "type": "checkboxes",
+      "section": "info"
+    },
+    "Luck-Points-max": {
+      "value": 6,
+      "type": "number",
+      "hidden": true,
+      "parent": "Luck-Points",
+      "expression": "Luck"
+    },
+    "Movement-Distance": {
+      "value": 12,
+      "type": "number",
+      "section": "info",
+      "expression": "MOVE * 2"
+    },
+    "Death-Save-Outcome": {
+      "value": "Success",
+      "type": "text",
+      "hidden": true,
+      "section": "details"
+    },
+    "Death-Save-Penalty": {
+      "value": 0,
+      "type": "number",
+      "hidden": true,
+      "section": "details"
+    },
+    "Range": {
+      "value": 10,
+      "type": "number",
+      "hidden": true,
+      "section": "details"
+    },
+    "Wounded": {
+      "value": false,
+      "type": "checkbox",
+      "section": "info",
+      "hidden": true,
+      "expression": "hit-points < (hit-points-maximum / 2) + 1"
+    },
+    "Athletics": {
+      "value": 8,
+      "type": "ability",
+      "section": "skills",
+      "expression": "Athletics-score + Dexterity",
+      "roll": "Athletics: {1d10 + Athletics}"
+    },
+    "Athletics-score": {
+      "value": 3,
+      "type": "number",
+      "hidden": true,
+      "parent": "Athletics"
+    },
+    "Basic-Tech": {
+      "value": 7,
+      "type": "ability",
+      "section": "skills",
+      "expression": "Basic-Tech-score + Technique",
+      "roll": "Basic-Tech: {1d10 + Basic-Tech}"
+    },
+    "Basic-Tech-score": {
+      "value": 3,
+      "type": "number",
+      "hidden": true,
+      "parent": "Basic-Tech"
+    },
+    "Brawling": {
+      "value": 8,
+      "type": "ability",
+      "section": "skills",
+      "expression": "Brawling-score + Dexterity",
+      "roll": "Brawling: {1d10 + Brawling}"
+    },
+    "Brawling-score": {
+      "value": 3,
+      "type": "number",
+      "hidden": true,
+      "parent": "Brawling"
+    },
+    "Bribery": {
+      "value": 12,
+      "type": "ability",
+      "section": "skills",
+      "expression": "Bribery-score + Cool",
+      "roll": "Bribery: {1d10 + Bribery}"
+    },
+    "Bribery-score": {
+      "value": 3,
+      "type": "number",
+      "hidden": true,
+      "parent": "Bribery"
+    },
+    "Concentration": {
+      "value": 8,
+      "type": "ability",
+      "section": "skills",
+      "expression": "Concentration-score + Intelligence",
+      "roll": "Concentration: {1d10 + Concentration}"
+    },
+    "Concentration-score": {
+      "value": 3,
+      "type": "number",
+      "hidden": true,
+      "parent": "Concentration"
+    },
+    "Conversation": {
+      "value": 9,
+      "type": "ability",
+      "section": "skills",
+      "expression": "Conversation-score + Empathy",
+      "roll": "Conversation: {1d10 + Conversation}"
+    },
+    "Conversation-score": {
+      "value": 3,
+      "type": "number",
+      "hidden": true,
+      "parent": "Conversation"
+    },
+    "Cybertech": {
+      "value": 7,
+      "type": "ability",
+      "section": "skills",
+      "expression": "Cybertech-score + Technique",
+      "roll": "Cybertech: {1d10 + Cybertech}"
+    },
+    "Cybertech-score": {
+      "value": 3,
+      "type": "number",
+      "hidden": true,
+      "parent": "Cybertech"
+    },
+    "Driving": {
+      "value": 7,
+      "type": "ability",
+      "section": "skills",
+      "expression": "Driving-score + Technique",
+      "roll": "Driving: {1d10 + Driving}"
+    },
+    "Driving-score": {
+      "value": 3,
+      "type": "number",
+      "hidden": true,
+      "parent": "Driving"
+    },
+    "Education": {
+      "value": 8,
+      "type": "ability",
+      "section": "skills",
+      "expression": "Education-score + Intelligence",
+      "roll": "Education: {1d10 + Education}"
+    },
+    "Education-score": {
+      "value": 3,
+      "type": "number",
+      "hidden": true,
+      "parent": "Education"
+    },
+    "Evasion": {
+      "value": 8,
+      "type": "ability",
+      "section": "skills",
+      "expression": "Evasion-score + Dexterity",
+      "roll": "Evasion: {1d10 + Evasion}"
+    },
+    "Evasion-score": {
+      "value": 3,
+      "type": "number",
+      "hidden": true,
+      "parent": "Evasion"
+    },
+    "First-Aid": {
+      "value": 7,
+      "type": "ability",
+      "section": "skills",
+      "expression": "First-Aid-score + Technique",
+      "roll": "First Aid: {1d10 + First-Aid}"
+    },
+    "First-Aid-score": {
+      "value": 3,
+      "type": "number",
+      "hidden": true,
+      "parent": "First-Aid"
+    },
+    "Human-Perception": {
+      "value": 9,
+      "type": "ability",
+      "section": "skills",
+      "expression": "Human-Perception-score + Empathy",
+      "roll": "Human Perception: {1d10 + Human-Perception}"
+    },
+    "Human-Perception-score": {
+      "value": 3,
+      "type": "number",
+      "hidden": true,
+      "parent": "Human-Perception"
+    },
+    "Interface": {
+      "value": 5,
+      "type": "ability",
+      "section": "skills",
+      "expression": "Interface-score",
+      "roll": "Interfacing: {1d10 + Interface}"
+    },
+    "Interface-score": {
+      "value": 5,
+      "type": "number",
+      "hidden": true,
+      "parent": "Interface"
+    },
+    "Interrogation": {
+      "value": 12,
+      "type": "ability",
+      "section": "skills",
+      "expression": "Interrogation-score + Cool",
+      "roll": "Interrogation: {1d10 + Interrogation}"
+    },
+    "Interrogation-score": {
+      "value": 3,
+      "type": "number",
+      "hidden": true,
+      "parent": "Interrogation"
+    },
+    "Local-Expert": {
+      "value": 8,
+      "type": "ability",
+      "section": "skills",
+      "expression": "Local-Expert-score + Intelligence",
+      "roll": "Local Expert: {1d10 + Local-Expert}"
+    },
+    "Local-Expert-score": {
+      "value": 3,
+      "type": "number",
+      "hidden": true,
+      "parent": "Local-Expert"
+    },
+    "Marksmanship": {
+      "value": 11,
+      "type": "ability",
+      "section": "skills",
+      "expression": "Marksmanship-score + Reflexes",
+      "roll": "Marksmanship: {1d10 + Marksmanship}"
+    },
+    "Marksmanship-score": {
+      "value": 3,
+      "type": "number",
+      "hidden": true,
+      "parent": "Marksmanship"
+    },
+    "Melee-Weapon": {
+      "value": 8,
+      "type": "ability",
+      "section": "skills",
+      "expression": "Melee-Weapon-score + Dexterity",
+      "roll": "Melee Weapon: {1d10 + Melee-Weapon}"
+    },
+    "Melee-Weapon-score": {
+      "value": 3,
+      "type": "number",
+      "hidden": true,
+      "parent": "Melee-Weapon"
+    },
+    "Perception": {
+      "value": 8,
+      "type": "ability",
+      "section": "skills",
+      "expression": "Perception-score + Intelligence",
+      "roll": "Perception: {1d10 + Perception}"
+    },
+    "Perception-score": {
+      "value": 3,
+      "type": "number",
+      "hidden": true,
+      "parent": "Perception"
+    },
+    "Persuasion": {
+      "value": 12,
+      "type": "ability",
+      "section": "skills",
+      "expression": "Persuasion-score + Cool",
+      "roll": "Persuasion: {1d10 + Persuasion}"
+    },
+    "Persuasion-score": {
+      "value": 3,
+      "type": "number",
+      "hidden": true,
+      "parent": "Persuasion"
+    },
+    "Play-Instrument": {
+      "value": 9,
+      "type": "ability",
+      "section": "skills",
+      "expression": "Play-Instrument-score + Empathy",
+      "roll": "Play Instrument: {1d10 + Play-Instrument}"
+    },
+    "Play-Instrument-score": {
+      "value": 3,
+      "type": "number",
+      "hidden": true,
+      "parent": "Play-Instrument"
+    },
+    "Reputation": {
+      "value": 12,
+      "type": "ability",
+      "section": "skills",
+      "expression": "Reputation-score + Cool",
+      "roll": "Facedown (Reputation): {1d10 + Reputation}"
+    },
+    "Reputation-score": {
+      "value": 3,
+      "type": "number",
+      "hidden": true,
+      "parent": "Reputation"
+    },
+    "Stealth": {
+      "value": 8,
+      "type": "ability",
+      "section": "skills",
+      "expression": "Stealth-score + Dexterity",
+      "roll": "Stealth: {1d10 + Stealth}"
+    },
+    "Stealth-score": {
+      "value": 3,
+      "type": "number",
+      "hidden": true,
+      "parent": "Stealth"
+    },
+    "Tracking": {
+      "value": 8,
+      "type": "ability",
+      "section": "skills",
+      "expression": "Tracking-score + Intelligence",
+      "roll": "Tracking: {1d10 + Tracking}"
+    },
+    "Tracking-score": {
+      "value": 3,
+      "type": "number",
+      "hidden": true,
+      "parent": "Tracking"
+    },
+    "Initiative": {
+      "value": 8,
+      "type": "number",
+      "section": "info",
+      "expression": "Reflexes",
+      "roll": "!r initiative = 1d10 + Initiative"
+    },
+    "Body-Armor": {
+      "value": "",
+      "type": "number",
+      "section": "info"
+    },
+    "Head-Armor": {
+      "value": "",
+      "type": "number",
+      "section": "info"
+    },
+    "Intelligence": {
+      "value": 5,
+      "type": "ability",
+      "section": "abilities",
+      "expression": "Intelligence-score",
+      "roll": "Intelligence: {1d10 + Intelligence}"
+    },
+    "Intelligence-score": {
+      "value": 5,
+      "type": "number",
+      "hidden": true,
+      "parent": "Intelligence"
+    },
+    "Reflexes": {
+      "value": 8,
+      "type": "ability",
+      "section": "abilities",
+      "expression": "Reflexes-score",
+      "roll": "Reflexes: {1d10 + Reflexes}"
+    },
+    "Reflexes-score": {
+      "value": 8,
+      "type": "number",
+      "hidden": true,
+      "parent": "Reflexes"
+    },
+    "Dexterity": {
+      "value": 5,
+      "type": "ability",
+      "section": "abilities",
+      "expression": "Dexterity-score",
+      "roll": "Dexterity: {1d10 + Dexterity}"
+    },
+    "Dexterity-score": {
+      "value": 5,
+      "type": "number",
+      "hidden": true,
+      "parent": "Dexterity"
+    },
+    "Technique": {
+      "value": 4,
+      "type": "ability",
+      "section": "abilities",
+      "expression": "Technique-score",
+      "roll": "Technique: {1d10 + Technique}"
+    },
+    "Technique-score": {
+      "value": 4,
+      "type": "number",
+      "hidden": true,
+      "parent": "Technique"
+    },
+    "Cool": {
+      "value": 9,
+      "type": "ability",
+      "section": "abilities",
+      "expression": "Cool-score",
+      "roll": "Cool: {1d10 + Cool}"
+    },
+    "Cool-score": {
+      "value": 9,
+      "type": "number",
+      "hidden": true,
+      "parent": "Cool"
+    },
+    "Willpower": {
+      "value": 8,
+      "type": "ability",
+      "section": "abilities",
+      "expression": "Willpower-score",
+      "roll": "Willpower: {1d10 + Willpower}"
+    },
+    "Willpower-score": {
+      "value": 8,
+      "type": "number",
+      "hidden": true,
+      "parent": "Willpower"
+    },
+    "Luck": {
+      "value": 6,
+      "type": "ability",
+      "section": "abilities",
+      "expression": "Luck-score",
+      "roll": "Luck: {1d10 + Luck}"
+    },
+    "Luck-score": {
+      "value": 6,
+      "type": "number",
+      "hidden": true,
+      "parent": "Luck"
+    },
+    "Movement": {
+      "value": 6,
+      "type": "ability",
+      "section": "abilities",
+      "expression": "Movement-score",
+      "roll": "Movement: {1d10 + Movement}"
+    },
+    "Movement-score": {
+      "value": 6,
+      "type": "number",
+      "hidden": true,
+      "parent": "Movement"
+    },
+    "Body": {
+      "value": 10,
+      "type": "ability",
+      "section": "abilities",
+      "expression": "Body-score",
+      "roll": "Body: {1d10 + Body}"
+    },
+    "Body-score": {
+      "value": 10,
+      "type": "number",
+      "hidden": true,
+      "parent": "Body"
+    },
+    "Empathy": {
+      "value": 6,
+      "type": "ability",
+      "section": "abilities",
+      "expression": "Empathy-score",
+      "roll": "Empathy: {1d10 + Empathy}"
+    },
+    "Empathy-score": {
+      "value": 6,
+      "type": "number",
+      "hidden": true,
+      "parent": "Empathy"
+    },
+    "hit-points-maximum": {
+      "value": 50,
+      "section": "info",
+      "type": "number",
+      "hidden": true,
+      "parent": "hit-points",
+      "expression": "(body * 5)"
+    },
+    "hit-points": {
+      "value": 50,
+      "section": "info",
+      "type": "health",
+      "local": false
+    },
+    "class": {
+      "value": "",
+      "section": "info",
+      "type": "text"
+    }
+  },
+  "info": {
+    "description": "<p>This is a Cyberpunk RED character sheet for Tableplop. It only encompases the jump start content but should be extendable to include the full ruleset.</p><p>Getting started:</p><ol><li>Set stat, armor and skill values for your character.</li><li>Delete unused skills (optional)</li><li>Delete unused weapon attacks from the messages section.</li><li>Set your name and icon.</li></ol>",
+    "notes": "<p>Features Outstanding:</p><ul><li>Critical Success / Failures</li></ul>",
+    "sections": [
+      {
+        "name": "Netrunner",
+        "position": "bottom",
+        "tab": 4,
+        "savedMessages": true
+      },
+      {
+        "name": "abilities",
+        "position": "left",
+        "tab": 1
+      },
+      {
+        "name": "info",
+        "position": "left",
+        "tab": 1
+      },
+      {
+        "name": "details",
+        "position": "left",
+        "tab": 3
+      },
+      {
+        "name": "skills",
+        "position": "right",
+        "tab": 2
+      },
+      {
+        "name": "messages",
+        "position": "bottom",
+        "tab": 4,
+        "savedMessages": true
+      }
+    ]
+  },
+  "appearances": [],
+  "savedMessages": [
+    {
+      "name": "dodge",
+      "message": "Dodge Attack: Attempt to dodge an attack against you (only usable by characters with a Reflexes of 9 or higher for ranged attacks, your reflexes: {Reflexes}). You can't dodge explosions. Hit Difficulty Value: {1d10 + Evasion - (Wounded ? 3 : 0)}",
+      "section": "messages"
+    },
+    {
+      "name": "heavy-pistol-attack-ranged",
+      "message": "Heavy Pistol Attack: Range of {Range = ?:How far is the target:}m. {1d10 + Marksmanship - (Wounded ? 3 : 0)} to hit vs DV{[15,20,25,30,30][Range < 13 ? 0 : Range < 26 ? 1 : Range < 51 ? 2 : Range < 101 ? 3 : Range < 201 ? 4 : 5]}. Damage: {3d6} (minus target's armor)",
+      "section": "messages"
+    },
+    {
+      "name": "very-heavy-pistol-attack-ranged",
+      "message": "Very Heavy Pistol Attack: Range of {Range = ?:How far is the target:}m. {1d10 + Marksmanship - (Wounded ? 3 : 0)} to hit vs DV{[15,20,25,30,30][Range < 13 ? 0 : Range < 26 ? 1 : Range < 51 ? 2 : Range < 101 ? 3 : Range < 201 ? 4 : 5]}. Damage: {4d6} (minus target's armor)",
+      "section": "messages"
+    },
+    {
+      "name": "smg-attack-ranged",
+      "message": "Submachine Gun Attack: Range of {Range = ?:How far is the target:}m. {1d10 + Marksmanship - (Wounded ? 3 : 0)} to hit vs DV{[15,15,20,25,25,30][Range < 13 ? 0 : Range < 26 ? 1 : Range < 51 ? 2 : Range < 101 ? 3 : Range < 201 ? 4 : 5]}. Damage: {2d6} (minus target's armor)",
+      "section": "messages"
+    },
+    {
+      "name": "assault-rifle-attack-ranged",
+      "message": "Assault Rifle Attack: Range of {Range = ?:How far is the target:}m. {1d10 + Marksmanship - (Wounded ? 3 : 0)} to hit vs DV{[15,10,10,15,20,25,30][Range < 13 ? 0 : Range < 26 ? 1 : Range < 51 ? 2 : Range < 101 ? 3 : Range < 201 ? 4 : 5]}. Damage: {5d6} (minus target's armor)",
+      "section": "messages"
+    },
+    {
+      "name": "shotgun-attack-ranged",
+      "message": "Shotgun Attack: Range of {Range = ?:How far is the target:}m. {1d10 + Marksmanship - (Wounded ? 3 : 0)} to hit vs DV{[15,20,25,30,35][Range < 13 ? 0 : Range < 26 ? 1 : Range < 51 ? 2 : Range < 101 ? 3 : Range < 201 ? 4 : 5]}. Damage: {5d6} (minus target's armor)",
+      "section": "messages"
+    },
+    {
+      "name": "rocket-launcher-attack-ranged",
+      "message": "Rocket Launcher Attack: Range of {Range = ?:How far is the target:}m. {1d10 + Marksmanship - (Wounded ? 3 : 0)} to hit vs DV{[15,15,15,20,20,25,30][Range < 13 ? 0 : Range < 26 ? 1 : Range < 51 ? 2 : Range < 101 ? 3 : Range < 201 ? 4 : 5]}. Damage: {7d10} (minus target's armor)",
+      "section": "messages"
+    },
+    {
+      "name": "assault-rifle-burst-ranged",
+      "message": "Assault Rifle Three Round Burst: Range of {Range = ?:How far is the target:}m. {1d10 + Marksmanship - (Wounded ? 3 : 0)} to hit vs DV{[12,10,12,18][Range < 13 ? 0 : Range < 26 ? 1 : Range < 51 ? 2 : Range < 101 ? 3 : Range < 201 ? 4 : 5]}. Damage: (1) {5d6} (2) {5d6} (3) {5d6} (minus target's armor)",
+      "section": "messages"
+    },
+    {
+      "name": "smg-burst-ranged",
+      "message": "Submachine Gun Three Round Burst: Range of {Range = ?:How far is the target:}m. {1d10 + Marksmanship - (Wounded ? 3 : 0)} to hit vs DV{[12,15,22,28][Range < 13 ? 0 : Range < 26 ? 1 : Range < 51 ? 2 : Range < 101 ? 3 : Range < 201 ? 4 : 5]}. Damage: (1) {2d6} (2) {2d6} (3) {2d6} (minus target's armor)",
+      "section": "messages"
+    },
+    {
+      "name": "cyberarm-melee",
+      "message": "Cyberarm Attack: {1d10 + Melee-Weapon - (Wounded ? 3 : 0)} to hit vs taget's dodge roll. Damage: {2d6} (minus half of target's armor, rounded up)",
+      "section": "messages"
+    },
+    {
+      "name": "brawl-melee",
+      "message": "Brawl: {1d10 + Brawling - (Wounded ? 3 : 0)} to hit vs taget's dodge roll. Damage: {@:[0,0,1,1,2,2,3,3,4,4][Body - 1]:d6} (zero damage against armor)",
+      "section": "messages"
+    },
+    {
+      "name": "assault-rifle-suppression-ranged",
+      "message": "Assault Rifle Suppressive Fire: All enemies within 25 feet, who are out of cover and within your line of sight must make a concentration save with a DV of: {1d10 + Marksmanship - (Wounded ? 3 : 0)}. Those who fail the check must on their next turn, use their move action to get into cover, taking the run action if required to reach it.",
+      "section": "messages"
+    },
+    {
+      "name": "smg-suppression-ranged",
+      "message": "Submachine Gun Suppressive Fire: All enemies within 25 feet, who are out of cover and within your line of sight must make a concentration save with a DV of: {1d10 + Marksmanship - (Wounded ? 3 : 0)}. Those who fail the check must on their next turn, use their move action to get into cover, taking the run action if required to reach it.",
+      "section": "messages"
+    },
+    {
+      "name": "death-save",
+      "message": "Death Save: {Death-Save-Outcome = 1d10 < (Body - Death-Save-Penalty) ? \"Success\" : \"Failure. You are dead.\"}. {Death-Save-Penalty = (Death-Save-Outcome == \"Success\" ? Death-Save-Penalty + 1 : 0)}"
+    },
+    {
+      "name": "stand-up",
+      "message": "Get Up: Use a Basic Action to stand up from Prone. While Prone you cannot use your Move Action until you use this Action.",
+      "section": "messages"
+    },
+    {
+      "name": "run",
+      "message": "Run: Use a Basic Action to take an additional Move Action. If you can’t use a Move Action right now, you can’t use this Action.",
+      "section": "messages"
+    },
+    {
+      "name": "reset-death-penalty",
+      "message": "Death Penalty reset to {Death-Save-Penalty = 0}."
+    },
+    {
+      "name": "banhammer-attack-net",
+      "message": "Banhammer: {1d10 + Interface + 2} to hit, {2d6} damage + {1d6} extra to hellhounds. Can only target programs.",
+      "section": "Netrunner"
+    },
+    {
+      "name": "scanner-meat",
+      "message": "Scanner: Uses a normal meatspace action to search for nearby net access points.",
+      "section": "Netrunner"
+    },
+    {
+      "name": "backdoor-net",
+      "message": "Backdoor: Use a net action to attempt to break through passwords in the net, not required if you know the password. Roll: {1d10 + Interface}",
+      "section": "Netrunner"
+    },
+    {
+      "name": "pathfinder-net",
+      "message": "Pathfinder: Use a net action to partially reveal a map of the net, the higher the check the more you learn. Roll: {1d10 + Interface}",
+      "section": "Netrunner"
+    },
+    {
+      "name": "slide-net",
+      "message": "Slide: Use a net action to attempt to flee combat with a Black ICE program. If you succeed you can move to adjacent floor but not past a password or other obstruction. You can only attempt to slide once per turn. Roll: {1d10 + Interface}",
+      "section": "Netrunner"
+    },
+    {
+      "name": "zap-net-attack",
+      "message": "Zap: Use a net action to make an attack against a program or enemy netrunner. Roll: {1d10 + Interface} to hit, {1d6} damage.",
+      "section": "Netrunner"
+    },
+    {
+      "name": "eye dee-net",
+      "message": "Eye-Dee: Use a net action to attempt to identify a piece of data you have obtained (e.g. a file). Roll: {1d10 + Interface}",
+      "section": "Netrunner"
+    },
+    {
+      "name": "control-net",
+      "message": "Control: Use a net action to attempt to take control of systems, or to operate systems you have taken control of (e.g. camera, robot, alarm). Roll: {1d10 + Interface}",
+      "section": "Netrunner"
+    },
+    {
+      "name": "virus-net",
+      "message": "Virus: Once you have reached the final level you can leave a virus of your design in the system. The more advanced/complex the virus is, the more net actions and higher DV will be required to create it successfully. {1d10 + Interface}",
+      "section": "Netrunner"
+    },
+    {
+      "name": "cloak-net",
+      "message": "Cloak: Use a net action to hide your presence and any viruses you have left behind in the system. {1d10 + Interface}",
+      "section": "Netrunner"
+    },
+    {
+      "name": "speed-gonzalvez-net",
+      "message": "Speedy Gonzalvez: Use a net action to increase your speed by +4 while this program is rezzed.",
+      "section": "Netrunner"
+    }
+  ]
+}
