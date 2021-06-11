@@ -7,3 +7,4 @@ These have been tested as working up to Tableplop version 14.4.
 
 Current templates:
 * [Cyberpunk RED Jumpstart Kit Template](https://github.com/Kickball/tableplop-templates/blob/main/Cyberpunk%20Red%20Tableplop%20Template.json)
+* [Index Card RPG (ICRPG) Version 2 Template](https://github.com/Kickball/tableplop-templates/blob/main/Index%20Card%20RPG%20v2.json)
