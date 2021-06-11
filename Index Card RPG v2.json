@@ -1,0 +1,219 @@
+{
+  "stats": {
+    "hit-points": {
+      "value": 10,
+      "section": "info",
+      "type": "health",
+      "local": true
+    },
+    "hit-points-maximum": {
+      "value": 10,
+      "section": "info",
+      "type": "number",
+      "hidden": true,
+      "parent": "hit-points"
+    },
+    "Mastery": {
+      "value": 0,
+      "type": "health",
+      "section": "info"
+    },
+    "Mastery-maximum": {
+      "value": 20,
+      "type": "number",
+      "hidden": true,
+      "parent": "Mastery",
+      "local": false,
+      "expression": "20"
+    },
+    "Type": {
+      "value": "",
+      "type": "text",
+      "section": "info"
+    },
+    "Life-Form": {
+      "value": "",
+      "type": "text",
+      "section": "info"
+    },
+    "Basic": {
+      "value": 0,
+      "type": "ability",
+      "section": "Effort",
+      "roll": "{1d4 + basic}",
+      "expression": "Basic-score"
+    },
+    "Basic-score": {
+      "value": 0,
+      "type": "number",
+      "hidden": true,
+      "parent": "Basic"
+    },
+    "Weapons-and-Tools": {
+      "value": 0,
+      "type": "ability",
+      "section": "Effort",
+      "expression": "Weapons-and-Tools-score",
+      "roll": "{1d6 + Weapons-and-Tools}"
+    },
+    "Weapons-and-Tools-score": {
+      "value": 0,
+      "type": "number",
+      "hidden": true,
+      "parent": "Weapons-and-Tools"
+    },
+    "Magic": {
+      "value": 0,
+      "type": "ability",
+      "section": "Effort",
+      "expression": "Magic-score",
+      "roll": "{1d8 + Magic}"
+    },
+    "Magic-score": {
+      "value": 0,
+      "type": "number",
+      "hidden": true,
+      "parent": "Magic"
+    },
+    "Ultimate": {
+      "value": 0,
+      "type": "ability",
+      "section": "Effort",
+      "expression": "Ultimate-score",
+      "roll": "{1d12 + Ultimate}"
+    },
+    "Ultimate-score": {
+      "value": 0,
+      "type": "number",
+      "hidden": true,
+      "parent": "Ultimate"
+    },
+    "STR": {
+      "value": 0,
+      "type": "ability",
+      "section": "abilities",
+      "expression": "STR-score",
+      "roll": "{1d20 + STR}"
+    },
+    "STR-score": {
+      "value": 0,
+      "type": "number",
+      "hidden": true,
+      "parent": "STR"
+    },
+    "DEX": {
+      "value": 0,
+      "type": "ability",
+      "section": "abilities",
+      "expression": "DEX-score",
+      "roll": "{1d20 + DEX}"
+    },
+    "DEX-score": {
+      "value": 0,
+      "type": "number",
+      "hidden": true,
+      "parent": "DEX"
+    },
+    "CON": {
+      "value": 0,
+      "type": "ability",
+      "section": "abilities",
+      "expression": "CON-score",
+      "roll": "{1d20 + CON}"
+    },
+    "CON-score": {
+      "value": 0,
+      "type": "number",
+      "hidden": true,
+      "parent": "CON"
+    },
+    "INT": {
+      "value": 0,
+      "type": "ability",
+      "section": "abilities",
+      "expression": "INT-score",
+      "roll": "{1d20 + INT}"
+    },
+    "INT-score": {
+      "value": 0,
+      "type": "number",
+      "hidden": true,
+      "parent": "INT"
+    },
+    "WIS": {
+      "value": 0,
+      "type": "ability",
+      "section": "abilities",
+      "expression": "WIS-score",
+      "roll": "{1d20 + WIS}"
+    },
+    "WIS-score": {
+      "value": 0,
+      "type": "number",
+      "hidden": true,
+      "parent": "WIS"
+    },
+    "CHA": {
+      "value": 0,
+      "type": "ability",
+      "section": "abilities",
+      "expression": "CHA-score",
+      "roll": "{1d20 + CHA}"
+    },
+    "CHA-score": {
+      "value": 0,
+      "type": "number",
+      "hidden": true,
+      "parent": "CHA"
+    },
+    "Defense": {
+        "value": 11,
+        "type": "ability",
+        "section": "abilities",
+        "expression": "10 + Defense-score + CON",
+        "roll": "{1d20 + Defense-score + CON}"
+      },
+      "Defense-score": {
+        "value": 1,
+        "type": "number",
+        "hidden": true,
+        "parent": "Defense"
+      }
+  },
+  "info": {
+    "description": "",
+    "notes": "<p>&nbsp;</p>",
+    "sections": [
+      {
+        "name": "abilities",
+        "position": "left",
+        "tab": 1
+      },
+      {
+        "name": "Effort",
+        "position": "left",
+        "tab": 2,
+        "savedMessages": false
+      },
+      {
+        "name": "info",
+        "position": "left",
+        "tab": 3
+      },
+      {
+        "name": "details",
+        "position": "left",
+        "tab": 3
+      },
+      {
+        "name": "messages",
+        "position": "bottom",
+        "tab": 4,
+        "savedMessages": true
+      }
+    ]
+  },
+  "appearances": [],
+  "savedMessages": [
+  ]
+}
