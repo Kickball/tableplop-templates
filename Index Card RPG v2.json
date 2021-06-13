@@ -26,6 +26,11 @@
       "local": false,
       "expression": "20"
     },
+    "Hero-Coin": {
+      "value": "",
+      "type": "checkbox",
+      "section": "info"
+    },
     "Type": {
       "value": "",
       "type": "text",
@@ -67,7 +72,7 @@
       "type": "ability",
       "section": "Effort",
       "expression": "Magic-score",
-      "roll": "{1d8 + Magic}"
+      "roll": "{1d10 + Magic}"
     },
     "Magic-score": {
       "value": 0,
@@ -87,6 +92,13 @@
       "type": "number",
       "hidden": true,
       "parent": "Ultimate"
+    },
+    "Initiative": {
+      "value": 0,
+      "type": "number",
+      "section": "Effort",
+      "expression": "0",
+      "roll": "{initiative = 1d20}"
     },
     "STR": {
       "value": 0,
@@ -167,18 +179,18 @@
       "parent": "CHA"
     },
     "Defense": {
-        "value": 11,
-        "type": "ability",
-        "section": "abilities",
-        "expression": "10 + Defense-score + CON",
-        "roll": "{1d20 + Defense-score + CON}"
-      },
-      "Defense-score": {
-        "value": 1,
-        "type": "number",
-        "hidden": true,
-        "parent": "Defense"
-      }
+      "value": 10,
+      "type": "ability",
+      "section": "abilities",
+      "expression": "10 + Defense-score + CON",
+      "roll": "{1d20 + Defense-score + CON}"
+    },
+    "Defense-score": {
+      "value": 0,
+      "type": "number",
+      "hidden": true,
+      "parent": "Defense"
+    }
   },
   "info": {
     "description": "",
@@ -214,6 +226,5 @@
     ]
   },
   "appearances": [],
-  "savedMessages": [
-  ]
+  "savedMessages": []
 }
