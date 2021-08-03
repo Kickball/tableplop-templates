@@ -6,6 +6,6 @@ As many of the mechanics as possible have been automated, if you find anything w
 These have been tested as working up to Tableplop version 14.4.
 
 Current templates:
-* [Cyberpunk RED Jumpstart Kit Template](https://github.com/Kickball/tableplop-templates/blob/main/Cyberpunk%20Red%20Tableplop%20Template.json)
+* [Cyberpunk RED Jumpstart Kit Template](https://github.com/Kickball/tableplop-templates/blob/main/Cyberpunk%20Red.json)
 * [Index Card RPG (ICRPG) Version 2 Player Template](https://github.com/Kickball/tableplop-templates/blob/main/Index%20Card%20RPG%20v2%20-%20Player.json)
 * [Index Card RPG (ICRPG) Version 2 NPC Template](https://github.com/Kickball/tableplop-templates/blob/main/Index%20Card%20RPG%20v2%20-%20NPC.json)
