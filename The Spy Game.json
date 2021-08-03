@@ -1,0 +1,1126 @@
+{
+  "properties": [
+    {
+      "id": 685769,
+      "parentId": 685768,
+      "type": "filter-list",
+      "data": {},
+      "value": "",
+      "rank": -19,
+      "characterId": 214080
+    },
+    {
+      "id": 685772,
+      "parentId": 685769,
+      "type": "message",
+      "data": {},
+      "name": "light-pistol",
+      "icon": "/images/message.png",
+      "value": "",
+      "rank": -9,
+      "message": "Light Pistol: {1d20 + prof + dex} to hit, {1d8 + dex} piercing. Range 40/160 ft. Reload 9 attacks.",
+      "characterId": 214080
+    },
+    {
+      "id": 685773,
+      "parentId": 685769,
+      "type": "message",
+      "data": {},
+      "name": "knife",
+      "icon": "/images/message.png",
+      "value": "",
+      "rank": -8,
+      "message": "Knife: {1d20 + prof + @:max(str,dex):} to hit, {1d4 + @:max(str,dex):} piercing damage. Range 20/60 feet ft.",
+      "characterId": 214080
+    },
+    {
+      "id": 685768,
+      "parentId": null,
+      "type": "tab-section",
+      "data": {},
+      "value": "Actions",
+      "rank": -14,
+      "characterId": 214080
+    },
+    {
+      "id": 685777,
+      "parentId": 685769,
+      "type": "message",
+      "data": {},
+      "name": "sledgehammer",
+      "icon": "/images/message.png",
+      "value": "",
+      "rank": -4,
+      "message": "Sledgehammer: {1d20 + prof + str} to hit, {1d10 + str} bludgeoning damage.",
+      "characterId": 214080
+    },
+    {
+      "id": 685780,
+      "parentId": null,
+      "type": "tab-section",
+      "data": {},
+      "value": "Character",
+      "rank": -15,
+      "characterId": 214080
+    },
+    {
+      "id": 685781,
+      "parentId": 685780,
+      "type": "horizontal-section",
+      "data": {},
+      "value": "",
+      "rank": -15,
+      "characterId": 214080
+    },
+    {
+      "id": 685782,
+      "parentId": 685781,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": -15,
+      "size": 65,
+      "characterId": 214080
+    },
+    {
+      "id": 685783,
+      "parentId": 685782,
+      "type": "title-section",
+      "data": {},
+      "value": "Abilities",
+      "rank": -17,
+      "characterId": 214080
+    },
+    {
+      "id": 685786,
+      "parentId": 685783,
+      "type": "ability",
+      "data": {},
+      "name": "constitution",
+      "value": 0,
+      "rank": -12,
+      "message": "constitution check: {1d20 + constitution}",
+      "formula": "floor ((constitution-score - 10) / 2)",
+      "characterId": 214080
+    },
+    {
+      "id": 685787,
+      "parentId": 685786,
+      "type": "number",
+      "data": {},
+      "name": "constitution-score",
+      "value": 10,
+      "rank": -11,
+      "characterId": 214080
+    },
+    {
+      "id": 685788,
+      "parentId": 685783,
+      "type": "ability",
+      "data": {},
+      "name": "intelligence",
+      "value": 0,
+      "rank": -10,
+      "message": "intelligence check: {1d20 + intelligence}",
+      "formula": "floor ((intelligence-score - 10) / 2)",
+      "characterId": 214080
+    },
+    {
+      "id": 685789,
+      "parentId": 685788,
+      "type": "number",
+      "data": {},
+      "name": "intelligence-score",
+      "value": 10,
+      "rank": -9,
+      "characterId": 214080
+    },
+    {
+      "id": 685790,
+      "parentId": 685783,
+      "type": "ability",
+      "data": {},
+      "name": "wisdom",
+      "value": 0,
+      "rank": -3,
+      "message": "wisdom check: {1d20 + wisdom}",
+      "formula": "floor ((wisdom-score - 10) / 2)",
+      "characterId": 214080
+    },
+    {
+      "id": 685791,
+      "parentId": 685790,
+      "type": "number",
+      "data": {},
+      "name": "wisdom-score",
+      "value": 10,
+      "rank": -2,
+      "characterId": 214080
+    },
+    {
+      "id": 685793,
+      "parentId": 685792,
+      "type": "number",
+      "data": {},
+      "name": "charisma-score",
+      "value": 10,
+      "rank": 0,
+      "characterId": 214080
+    },
+    {
+      "id": 685794,
+      "parentId": 685783,
+      "type": "ability",
+      "data": {},
+      "name": "strength",
+      "value": 0,
+      "rank": -17,
+      "message": "strength check: {1d20 + strength}",
+      "formula": "floor ((strength-score - 10) / 2)",
+      "characterId": 214080
+    },
+    {
+      "id": 685796,
+      "parentId": 685782,
+      "type": "title-section",
+      "data": {},
+      "value": "Info",
+      "rank": -15,
+      "characterId": 214080
+    },
+    {
+      "id": 685797,
+      "parentId": 685796,
+      "type": "number",
+      "data": {},
+      "name": "level",
+      "value": 1,
+      "rank": 100,
+      "characterId": 214080
+    },
+    {
+      "id": 685798,
+      "parentId": 685796,
+      "type": "text",
+      "data": {},
+      "name": "class",
+      "value": "",
+      "rank": 98,
+      "characterId": 214080
+    },
+    {
+      "id": 685800,
+      "parentId": 685796,
+      "type": "number",
+      "data": {},
+      "name": "armor-class",
+      "value": 10,
+      "rank": 94,
+      "characterId": 214080
+    },
+    {
+      "id": 685801,
+      "parentId": 685796,
+      "type": "number",
+      "data": {},
+      "name": "speed",
+      "value": 30,
+      "rank": 96,
+      "characterId": 214080
+    },
+    {
+      "id": 685802,
+      "parentId": 685796,
+      "type": "number",
+      "data": {},
+      "name": "experience",
+      "value": "",
+      "rank": 101,
+      "characterId": 214080
+    },
+    {
+      "id": 685803,
+      "parentId": 685796,
+      "type": "number",
+      "data": {},
+      "name": "proficiency",
+      "value": 2,
+      "rank": 97,
+      "formula": "level <= 4 ? 2 : level <= 8 ? 3 : level <= 12 ? 4 : level <= 16 ? 5 : 6",
+      "characterId": 214080
+    },
+    {
+      "id": 685804,
+      "parentId": 685796,
+      "type": "number",
+      "data": {},
+      "name": "initiative",
+      "value": 0,
+      "rank": 93,
+      "message": "!r initiative = 1d20 + initiative",
+      "formula": "dex",
+      "characterId": 214080
+    },
+    {
+      "id": 685805,
+      "parentId": 685782,
+      "type": "health",
+      "data": {},
+      "name": "hit-points",
+      "value": 10,
+      "rank": -16,
+      "characterId": 214080
+    },
+    {
+      "id": 685806,
+      "parentId": 685805,
+      "type": "number",
+      "data": {},
+      "name": "hit-points-maximum",
+      "value": 10,
+      "rank": 102,
+      "characterId": 214080
+    },
+    {
+      "id": 685807,
+      "parentId": 685805,
+      "type": "number",
+      "data": {},
+      "name": "hit-points-temporary",
+      "value": "",
+      "rank": 104,
+      "characterId": 214080
+    },
+    {
+      "id": 685808,
+      "parentId": 685782,
+      "type": "title-section",
+      "data": {},
+      "value": "Details",
+      "rank": -13,
+      "characterId": 214080
+    },
+    {
+      "id": 685809,
+      "parentId": 685808,
+      "type": "paragraph",
+      "data": {},
+      "value": "<p>&nbsp;</p>",
+      "rank": -17,
+      "characterId": 214080
+    },
+    {
+      "id": 685810,
+      "parentId": 685782,
+      "type": "appearance",
+      "data": {
+        "appearances": []
+      },
+      "value": "",
+      "rank": -14,
+      "characterId": 214080
+    },
+    {
+      "id": 685811,
+      "parentId": 685781,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": -14,
+      "size": 35,
+      "characterId": 214080
+    },
+    {
+      "id": 685812,
+      "parentId": 685811,
+      "type": "title-section",
+      "data": {},
+      "value": "Saving Throws",
+      "rank": -17,
+      "characterId": 214080
+    },
+    {
+      "id": 685814,
+      "parentId": 685813,
+      "type": "checkbox",
+      "data": {},
+      "name": "strength-save-proficiency",
+      "value": "",
+      "rank": 2,
+      "characterId": 214080
+    },
+    {
+      "id": 685815,
+      "parentId": 685812,
+      "type": "saving-throw",
+      "data": {},
+      "name": "dexterity-save",
+      "value": 0,
+      "rank": 3,
+      "message": "DEX save: {1d20 + dexterity-save}",
+      "formula": "dexterity + (dexterity-save-proficiency ? proficiency : 0)",
+      "characterId": 214080
+    },
+    {
+      "id": 685816,
+      "parentId": 685815,
+      "type": "checkbox",
+      "data": {},
+      "name": "dexterity-save-proficiency",
+      "value": false,
+      "rank": 4,
+      "characterId": 214080
+    },
+    {
+      "id": 685817,
+      "parentId": 685812,
+      "type": "saving-throw",
+      "data": {},
+      "name": "constitution-save",
+      "value": 0,
+      "rank": 5,
+      "message": "CON save: {1d20 + constitution-save}",
+      "formula": "constitution + (constitution-save-proficiency ? proficiency : 0)",
+      "characterId": 214080
+    },
+    {
+      "id": 685818,
+      "parentId": 685817,
+      "type": "checkbox",
+      "data": {},
+      "name": "constitution-save-proficiency",
+      "value": "",
+      "rank": 6,
+      "characterId": 214080
+    },
+    {
+      "id": 685819,
+      "parentId": 685812,
+      "type": "saving-throw",
+      "data": {},
+      "name": "intelligence-save",
+      "value": 0,
+      "rank": 7,
+      "message": "INT save: {1d20 + intelligence-save}",
+      "formula": "intelligence + (intelligence-save-proficiency ? proficiency : 0)",
+      "characterId": 214080
+    },
+    {
+      "id": 685820,
+      "parentId": 685819,
+      "type": "checkbox",
+      "data": {},
+      "name": "intelligence-save-proficiency",
+      "value": "",
+      "rank": 8,
+      "characterId": 214080
+    },
+    {
+      "id": 685821,
+      "parentId": 685812,
+      "type": "saving-throw",
+      "data": {},
+      "name": "wisdom-save",
+      "value": 0,
+      "rank": 9,
+      "message": "WIS save: {1d20 + wisdom-save}",
+      "formula": "wisdom + (wisdom-save-proficiency ? proficiency : 0)",
+      "characterId": 214080
+    },
+    {
+      "id": 685822,
+      "parentId": 685821,
+      "type": "checkbox",
+      "data": {},
+      "name": "wisdom-save-proficiency",
+      "value": "",
+      "rank": 10,
+      "characterId": 214080
+    },
+    {
+      "id": 685823,
+      "parentId": 685812,
+      "type": "saving-throw",
+      "data": {},
+      "name": "charisma-save",
+      "value": 0,
+      "rank": 11,
+      "message": "CHA save: {1d20 + charisma-save}",
+      "formula": "charisma + (charisma-save-proficiency ? proficiency : 0)",
+      "characterId": 214080
+    },
+    {
+      "id": 685824,
+      "parentId": 685823,
+      "type": "checkbox",
+      "data": {},
+      "name": "charisma-save-proficiency",
+      "value": "",
+      "rank": 12,
+      "characterId": 214080
+    },
+    {
+      "id": 685825,
+      "parentId": 685811,
+      "type": "title-section",
+      "data": {},
+      "value": "Senses",
+      "rank": -15,
+      "characterId": 214080
+    },
+    {
+      "id": 685826,
+      "parentId": 685825,
+      "type": "number",
+      "data": {},
+      "name": "dark-vision",
+      "value": "",
+      "rank": 87,
+      "characterId": 214080
+    },
+    {
+      "id": 685827,
+      "parentId": 685825,
+      "type": "number",
+      "data": {},
+      "name": "passive-perception",
+      "value": 10,
+      "rank": 88,
+      "formula": "10 + perception",
+      "characterId": 214080
+    },
+    {
+      "id": 685828,
+      "parentId": 685825,
+      "type": "number",
+      "data": {},
+      "name": "passive-insight",
+      "value": 10,
+      "rank": 89,
+      "formula": "10 + insight",
+      "characterId": 214080
+    },
+    {
+      "id": 685829,
+      "parentId": 685811,
+      "type": "title-section",
+      "data": {},
+      "value": "Skills",
+      "rank": -14,
+      "characterId": 214080
+    },
+    {
+      "id": 685831,
+      "parentId": 685830,
+      "type": "checkbox",
+      "data": {},
+      "name": "perception-proficiency",
+      "value": "",
+      "rank": 69,
+      "characterId": 214080
+    },
+    {
+      "id": 685832,
+      "parentId": 685830,
+      "type": "checkbox",
+      "data": {},
+      "name": "perception-expertise",
+      "value": "",
+      "rank": 70,
+      "characterId": 214080
+    },
+    {
+      "id": 685839,
+      "parentId": 685829,
+      "type": "skill",
+      "data": {
+        "subtitle": "wis"
+      },
+      "name": "insight",
+      "value": 0,
+      "rank": 24,
+      "message": "Insight check: {1d20 + insight}",
+      "formula": "wisdom + (insight-proficiency ? proficiency : jack-of-all-trades ? (floor (proficiency / 2)) : 0) + (insight-expertise ? proficiency : 0)",
+      "characterId": 214080
+    },
+    {
+      "id": 685840,
+      "parentId": 685839,
+      "type": "checkbox",
+      "data": {},
+      "name": "insight-proficiency",
+      "value": "",
+      "rank": 63,
+      "characterId": 214080
+    },
+    {
+      "id": 685841,
+      "parentId": 685839,
+      "type": "checkbox",
+      "data": {},
+      "name": "insight-expertise",
+      "value": "",
+      "rank": 64,
+      "characterId": 214080
+    },
+    {
+      "id": 685842,
+      "parentId": 685829,
+      "type": "skill",
+      "data": {
+        "subtitle": "wis"
+      },
+      "name": "medicine",
+      "value": 0,
+      "rank": 28,
+      "message": "Medicine check: {1d20 + medicine}",
+      "formula": "wisdom + (medicine-proficiency ? proficiency : jack-of-all-trades ? (floor (proficiency / 2)) : 0) + (medicine-expertise ? proficiency : 0)",
+      "characterId": 214080
+    },
+    {
+      "id": 685843,
+      "parentId": 685842,
+      "type": "checkbox",
+      "data": {},
+      "name": "medicine-proficiency",
+      "value": "",
+      "rank": 66,
+      "characterId": 214080
+    },
+    {
+      "id": 685844,
+      "parentId": 685842,
+      "type": "checkbox",
+      "data": {},
+      "name": "medicine-expertise",
+      "value": "",
+      "rank": 67,
+      "characterId": 214080
+    },
+    {
+      "id": 685846,
+      "parentId": 685845,
+      "type": "checkbox",
+      "data": {},
+      "name": "survival-proficiency",
+      "value": "",
+      "rank": 72,
+      "characterId": 214080
+    },
+    {
+      "id": 685847,
+      "parentId": 685845,
+      "type": "checkbox",
+      "data": {},
+      "name": "survival-expertise",
+      "value": "",
+      "rank": 73,
+      "characterId": 214080
+    },
+    {
+      "id": 685848,
+      "parentId": 685829,
+      "type": "skill",
+      "data": {
+        "subtitle": "cha"
+      },
+      "name": "deception",
+      "value": 0,
+      "rank": 20,
+      "message": "Deception check: {1d20 + deception}",
+      "formula": "charisma + (deception-proficiency ? proficiency : jack-of-all-trades ? (floor (proficiency / 2)) : 0) + (deception-expertise ? proficiency : 0)",
+      "characterId": 214080
+    },
+    {
+      "id": 685849,
+      "parentId": 685848,
+      "type": "checkbox",
+      "data": {},
+      "name": "deception-proficiency",
+      "value": "",
+      "rank": 75,
+      "characterId": 214080
+    },
+    {
+      "id": 685850,
+      "parentId": 685848,
+      "type": "checkbox",
+      "data": {},
+      "name": "deception-expertise",
+      "value": "",
+      "rank": 76,
+      "characterId": 214080
+    },
+    {
+      "id": 685851,
+      "parentId": 685829,
+      "type": "skill",
+      "data": {
+        "subtitle": "cha"
+      },
+      "name": "intimidation",
+      "value": 0,
+      "rank": 25,
+      "message": "Intimidation check: {1d20 + intimidation}",
+      "formula": "charisma + (intimidation-proficiency ? proficiency : jack-of-all-trades ? (floor (proficiency / 2)) : 0) + (intimidation-expertise ? proficiency : 0)",
+      "characterId": 214080
+    },
+    {
+      "id": 685852,
+      "parentId": 685851,
+      "type": "checkbox",
+      "data": {},
+      "name": "intimidation-proficiency",
+      "value": "",
+      "rank": 78,
+      "characterId": 214080
+    },
+    {
+      "id": 685853,
+      "parentId": 685851,
+      "type": "checkbox",
+      "data": {},
+      "name": "intimidation-expertise",
+      "value": "",
+      "rank": 79,
+      "characterId": 214080
+    },
+    {
+      "id": 685854,
+      "parentId": 685829,
+      "type": "skill",
+      "data": {
+        "subtitle": "int"
+      },
+      "name": "infotech",
+      "value": 0,
+      "rank": 23,
+      "message": "Infotech check: {1d20 + infotech}",
+      "formula": "intelligence + (infotech-proficiency ? proficiency : jack-of-all-trades ? (floor (proficiency / 2)) : 0) + (infotech-expertise ? proficiency : 0)",
+      "characterId": 214080
+    },
+    {
+      "id": 685855,
+      "parentId": 685854,
+      "type": "checkbox",
+      "data": {},
+      "name": "infotech-proficiency",
+      "value": "",
+      "rank": 81,
+      "characterId": 214080
+    },
+    {
+      "id": 685856,
+      "parentId": 685854,
+      "type": "checkbox",
+      "data": {},
+      "name": "infotech-expertise",
+      "value": "",
+      "rank": 82,
+      "characterId": 214080
+    },
+    {
+      "id": 685857,
+      "parentId": 685829,
+      "type": "skill",
+      "data": {
+        "subtitle": "cha"
+      },
+      "name": "persuasion",
+      "value": 0,
+      "rank": 33,
+      "message": "Persuasion check: {1d20 + persuasion}",
+      "formula": "charisma + (persuasion-proficiency ? proficiency : jack-of-all-trades ? (floor (proficiency / 2)) : 0) + (persuasion-expertise ? proficiency : 0)",
+      "characterId": 214080
+    },
+    {
+      "id": 685858,
+      "parentId": 685857,
+      "type": "checkbox",
+      "data": {},
+      "name": "persuasion-proficiency",
+      "value": "",
+      "rank": 84,
+      "characterId": 214080
+    },
+    {
+      "id": 685859,
+      "parentId": 685857,
+      "type": "checkbox",
+      "data": {},
+      "name": "persuasion-expertise",
+      "value": "",
+      "rank": 85,
+      "characterId": 214080
+    },
+    {
+      "id": 685860,
+      "parentId": 685829,
+      "type": "checkbox",
+      "data": {},
+      "name": "jack-of-all-trades",
+      "value": "",
+      "rank": 86,
+      "characterId": 214080
+    },
+    {
+      "id": 685861,
+      "parentId": 685829,
+      "type": "skill",
+      "data": {
+        "subtitle": "str"
+      },
+      "name": "athletics",
+      "value": 0,
+      "rank": 13,
+      "message": "Athletics check: {1d20 + athletics}",
+      "formula": "strength + (athletics-proficiency ? proficiency : jack-of-all-trades ? (floor (proficiency / 2)) : 0) + (athletics-expertise ? proficiency : 0)",
+      "characterId": 214080
+    },
+    {
+      "id": 685862,
+      "parentId": 685861,
+      "type": "checkbox",
+      "data": {},
+      "name": "athletics-proficiency",
+      "value": "",
+      "rank": 18,
+      "characterId": 214080
+    },
+    {
+      "id": 685863,
+      "parentId": 685861,
+      "type": "checkbox",
+      "data": {},
+      "name": "athletics-expertise",
+      "value": "",
+      "rank": 19,
+      "characterId": 214080
+    },
+    {
+      "id": 685864,
+      "parentId": 685829,
+      "type": "skill",
+      "data": {
+        "subtitle": "int"
+      },
+      "name": "mechanics",
+      "value": 0,
+      "rank": 26,
+      "message": "Mechanics check: {1d20 + mechanics}",
+      "formula": "intelligence + (mechanics-proficiency ? proficiency : jack-of-all-trades ? (floor (proficiency / 2)) : 0) + (mechanics-expertise ? proficiency : 0)",
+      "characterId": 214080
+    },
+    {
+      "id": 685865,
+      "parentId": 685864,
+      "type": "checkbox",
+      "data": {},
+      "name": "mechanics-proficiency",
+      "value": "",
+      "rank": 51,
+      "characterId": 214080
+    },
+    {
+      "id": 685866,
+      "parentId": 685864,
+      "type": "checkbox",
+      "data": {},
+      "name": "mechanics-expertise",
+      "value": "",
+      "rank": 52,
+      "characterId": 214080
+    },
+    {
+      "id": 685867,
+      "parentId": 685829,
+      "type": "skill",
+      "data": {
+        "subtitle": "dex"
+      },
+      "name": "acrobatics",
+      "value": 0,
+      "rank": 10,
+      "message": "Acrobatics check: {1d20 + acrobatics}",
+      "formula": "dexterity + (acrobatics-proficiency ? proficiency : jack-of-all-trades ? (floor (proficiency / 2)) : 0) + (acrobatics-expertise ? proficiency : 0)",
+      "characterId": 214080
+    },
+    {
+      "id": 685868,
+      "parentId": 685867,
+      "type": "checkbox",
+      "data": {},
+      "name": "acrobatics-proficiency",
+      "value": "",
+      "rank": 21,
+      "characterId": 214080
+    },
+    {
+      "id": 685869,
+      "parentId": 685867,
+      "type": "checkbox",
+      "data": {},
+      "name": "acrobatics-expertise",
+      "value": "",
+      "rank": 22,
+      "characterId": 214080
+    },
+    {
+      "id": 685870,
+      "parentId": 685829,
+      "type": "skill",
+      "data": {
+        "subtitle": "dex"
+      },
+      "name": "sleight-of-hand",
+      "value": 0,
+      "rank": 35,
+      "message": "Sleight of hand check: {1d20 + sleight-of-hand}",
+      "formula": "dexterity + (sleight-of-hand-proficiency ? proficiency : jack-of-all-trades ? (floor (proficiency / 2)) : 0) + (sleight-of-hand-expertise ? proficiency : 0)",
+      "characterId": 214080
+    },
+    {
+      "id": 685871,
+      "parentId": 685870,
+      "type": "checkbox",
+      "data": {},
+      "name": "sleight-of-hand-proficiency",
+      "value": "",
+      "rank": 37,
+      "characterId": 214080
+    },
+    {
+      "id": 685872,
+      "parentId": 685870,
+      "type": "checkbox",
+      "data": {},
+      "name": "sleight-of-hand-expertise",
+      "value": "",
+      "rank": 38,
+      "characterId": 214080
+    },
+    {
+      "id": 685873,
+      "parentId": 685829,
+      "type": "skill",
+      "data": {
+        "subtitle": "dex"
+      },
+      "name": "stealth",
+      "value": 0,
+      "rank": 38,
+      "message": "Stealth check: {1d20 + stealth}",
+      "formula": "dexterity + (stealth-proficiency ? proficiency : jack-of-all-trades ? (floor (proficiency / 2)) : 0) + (stealth-expertise ? proficiency : 0)",
+      "characterId": 214080
+    },
+    {
+      "id": 685874,
+      "parentId": 685873,
+      "type": "checkbox",
+      "data": {},
+      "name": "stealth-proficiency",
+      "value": "",
+      "rank": 42,
+      "characterId": 214080
+    },
+    {
+      "id": 685875,
+      "parentId": 685873,
+      "type": "checkbox",
+      "data": {},
+      "name": "stealth-expertise",
+      "value": "",
+      "rank": 43,
+      "characterId": 214080
+    },
+    {
+      "id": 685879,
+      "parentId": 685829,
+      "type": "skill",
+      "data": {
+        "subtitle": "int"
+      },
+      "name": "espionage",
+      "value": 0,
+      "rank": 21,
+      "message": "Espionage check: {1d20 + espionage}",
+      "formula": "intelligence + (espionage-proficiency ? proficiency : jack-of-all-trades ? (floor (proficiency / 2)) : 0) + (espionage-expertise ? proficiency : 0)",
+      "characterId": 214080
+    },
+    {
+      "id": 685880,
+      "parentId": 685879,
+      "type": "checkbox",
+      "data": {},
+      "name": "espionage-proficiency",
+      "value": "",
+      "rank": 48,
+      "characterId": 214080
+    },
+    {
+      "id": 685881,
+      "parentId": 685879,
+      "type": "checkbox",
+      "data": {},
+      "name": "espionage-expertise",
+      "value": "",
+      "rank": 49,
+      "characterId": 214080
+    },
+    {
+      "id": 685883,
+      "parentId": 685882,
+      "type": "checkbox",
+      "data": {},
+      "name": "infiltration-expertise",
+      "value": "",
+      "rank": 55,
+      "characterId": 214080
+    },
+    {
+      "id": 685884,
+      "parentId": 685882,
+      "type": "checkbox",
+      "data": {},
+      "name": "infiltration-proficiency",
+      "value": "",
+      "rank": 54,
+      "characterId": 214080
+    },
+    {
+      "id": 685795,
+      "parentId": 685794,
+      "type": "number",
+      "data": {},
+      "name": "strength-score",
+      "value": 10,
+      "rank": -15,
+      "characterId": 214080
+    },
+    {
+      "id": 685813,
+      "parentId": 685812,
+      "type": "saving-throw",
+      "data": {},
+      "name": "strength-save",
+      "value": 0,
+      "rank": 1,
+      "message": "STR save: {1d20 + strength-save}",
+      "formula": "strength + (strength-save-proficiency ? proficiency : 0)",
+      "characterId": 214080
+    },
+    {
+      "id": 685785,
+      "parentId": 685784,
+      "type": "number",
+      "data": {},
+      "name": "dexterity-score",
+      "value": 10,
+      "rank": -13,
+      "characterId": 214080
+    },
+    {
+      "id": 685784,
+      "parentId": 685783,
+      "type": "ability",
+      "data": {},
+      "name": "dexterity",
+      "value": 0,
+      "rank": -14,
+      "message": "dexterity check: {1d20 + dexterity}",
+      "formula": "floor ((dexterity-score - 10) / 2)",
+      "characterId": 214080
+    },
+    {
+      "id": 685830,
+      "parentId": 685829,
+      "type": "skill",
+      "data": {
+        "subtitle": "wis"
+      },
+      "name": "perception",
+      "value": 0,
+      "rank": 30,
+      "message": "Perception check: {1d20 + perception}",
+      "formula": "wisdom + (perception-proficiency ? proficiency : jack-of-all-trades ? (floor (proficiency / 2)) : 0) + (perception-expertise ? proficiency : 0)",
+      "characterId": 214080
+    },
+    {
+      "id": 685845,
+      "parentId": 685829,
+      "type": "skill",
+      "data": {
+        "subtitle": "wis"
+      },
+      "name": "survival",
+      "value": 0,
+      "rank": 39,
+      "message": "Survival check: {1d20 + survival}",
+      "formula": "wisdom + (survival-proficiency ? proficiency : jack-of-all-trades ? (floor (proficiency / 2)) : 0) + (survival-expertise ? proficiency : 0)",
+      "characterId": 214080
+    },
+    {
+      "id": 685792,
+      "parentId": 685783,
+      "type": "ability",
+      "data": {},
+      "name": "charisma",
+      "value": 0,
+      "rank": -1,
+      "message": "charisma check: {1d20 + charisma}",
+      "formula": "floor ((charisma-score - 10) / 2)",
+      "characterId": 214080
+    },
+    {
+      "id": 686564,
+      "parentId": 685829,
+      "type": "skill",
+      "data": {
+        "subtitle": "int"
+      },
+      "name": "tactics",
+      "value": 0,
+      "rank": 85,
+      "message": "Tactics check: {1d20 + tactics}",
+      "formula": "intelligence + (tactics-proficiency ? proficiency : jack-of-all-trades ? (floor (proficiency / 2)) : 0) + (tactics-expertise ? proficiency : 0)",
+      "characterId": 214080
+    },
+    {
+      "id": 686565,
+      "parentId": 686564,
+      "type": "checkbox",
+      "data": {},
+      "name": "tactics-proficiency",
+      "value": false,
+      "rank": 1,
+      "characterId": 214080
+    },
+    {
+      "id": 686566,
+      "parentId": 686564,
+      "type": "checkbox",
+      "data": {},
+      "name": "tactics-expertise",
+      "value": false,
+      "rank": 2,
+      "characterId": 214080
+    },
+    {
+      "id": 685882,
+      "parentId": 685829,
+      "type": "skill",
+      "data": {
+        "subtitle": "wis"
+      },
+      "name": "infiltration",
+      "value": 0,
+      "rank": 22,
+      "message": "Infiltration check: {1d20 + infiltration}",
+      "formula": "wisdom + (infiltration-proficiency ? proficiency : jack-of-all-trades ? (floor (proficiency / 2)) : 0) + (infiltration-expertise ? proficiency : 0)",
+      "characterId": 214080
+    }
+  ],
+  "appearance": null,
+  "private": false,
+  "type": "tableplop-character-v2"
+}
