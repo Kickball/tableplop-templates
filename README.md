@@ -9,3 +9,4 @@ Current templates:
 * [Cyberpunk RED Jumpstart Kit Template](https://github.com/Kickball/tableplop-templates/blob/main/Cyberpunk%20Red.json)
 * [Index Card RPG (ICRPG) Version 2 Player Template](https://github.com/Kickball/tableplop-templates/blob/main/Index%20Card%20RPG%20v2%20-%20Player.json)
 * [Index Card RPG (ICRPG) Version 2 NPC Template](https://github.com/Kickball/tableplop-templates/blob/main/Index%20Card%20RPG%20v2%20-%20NPC.json)
+* [The Spy Game (5E)](https://github.com/Kickball/tableplop-templates/blob/main/The%20Spy%20Game.json)
