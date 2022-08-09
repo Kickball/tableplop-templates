@@ -1,230 +1,1096 @@
 {
-  "stats": {
-    "hit-points": {
-      "value": 10,
-      "section": "info",
-      "type": "health",
-      "local": true
-    },
-    "hit-points-maximum": {
-      "value": 10,
-      "section": "info",
-      "type": "number",
-      "hidden": true,
-      "parent": "hit-points"
-    },
-    "Mastery": {
-      "value": 0,
-      "type": "health",
-      "section": "info"
-    },
-    "Mastery-maximum": {
-      "value": 20,
-      "type": "number",
-      "hidden": true,
-      "parent": "Mastery",
-      "local": false,
-      "expression": "20"
-    },
-    "Hero-Coin": {
-      "value": "",
+  "properties": [
+    {
+      "id": 24067829,
+      "parentId": 24067885,
       "type": "checkbox",
-      "section": "info"
+      "data": {},
+      "name": "Hero-Coin 🪙",
+      "value": false,
+      "rank": -2,
+      "characterId": 521637,
+      "message": "The hero coin can be used to re-roll any dice roll or add a D12 to any roll."
     },
-    "Type": {
-      "value": "",
-      "type": "text",
-      "section": "info"
+    {
+      "id": 24067879,
+      "parentId": 24067885,
+      "type": "horizontal-section",
+      "data": null,
+      "rank": -5,
+      "characterId": 521637
     },
-    "Life-Form": {
-      "value": "",
-      "type": "text",
-      "section": "info"
+    {
+      "id": 24067897,
+      "parentId": 24067878,
+      "type": "horizontal-section",
+      "data": null,
+      "rank": 11,
+      "characterId": 521637
     },
-    "Basic": {
+    {
+      "id": 24067886,
+      "parentId": 24067885,
+      "type": "title-section",
+      "data": {
+        "collapsed": false
+      },
+      "value": "Life",
+      "rank": 0,
+      "characterId": 521637
+    },
+    {
+      "id": 24067853,
+      "parentId": 24067852,
+      "type": "number",
+      "data": null,
+      "name": "Gold",
       "value": 0,
+      "rank": 3,
+      "characterId": 521637
+    },
+    {
+      "id": 24067854,
+      "parentId": 24067852,
+      "type": "table",
+      "data": {
+        "headers": [
+          "Name",
+          "Description",
+          "Status"
+        ]
+      },
+      "rank": 2,
+      "characterId": 521637
+    },
+    {
+      "id": 24067823,
+      "parentId": 24067825,
       "type": "ability",
-      "section": "Effort",
-      "roll": "{1d4 + basic}",
-      "expression": "Basic-score"
-    },
-    "Basic-score": {
+      "data": {},
+      "name": "STR",
       "value": 0,
-      "type": "number",
-      "hidden": true,
-      "parent": "Basic"
+      "rank": 15,
+      "message": "Strength Roll: {1d20 + STR}",
+      "formula": "STR-score",
+      "characterId": 521637
     },
-    "Weapons-and-Tools": {
-      "value": 0,
+    {
+      "id": 24067841,
+      "parentId": 24067825,
       "type": "ability",
-      "section": "Effort",
-      "expression": "Weapons-and-Tools-score",
-      "roll": "{1d6 + Weapons-and-Tools}"
-    },
-    "Weapons-and-Tools-score": {
+      "data": {},
+      "name": "CON",
       "value": 0,
-      "type": "number",
-      "hidden": true,
-      "parent": "Weapons-and-Tools"
+      "rank": 19,
+      "message": "Constitution Roll: {1d20 + CON}",
+      "formula": "CON-score",
+      "characterId": 521637
     },
-    "Magic": {
-      "value": 0,
+    {
+      "id": 24067842,
+      "parentId": 24067825,
       "type": "ability",
-      "section": "Effort",
-      "expression": "Magic-score",
-      "roll": "{1d10 + Magic}"
-    },
-    "Magic-score": {
+      "data": {},
+      "name": "INT",
       "value": 0,
-      "type": "number",
-      "hidden": true,
-      "parent": "Magic"
+      "rank": 21,
+      "message": "Intelligence Roll: {1d20 + INT}",
+      "formula": "INT-score",
+      "characterId": 521637
     },
-    "Ultimate": {
-      "value": 0,
+    {
+      "id": 24067843,
+      "parentId": 24067825,
       "type": "ability",
-      "section": "Effort",
-      "expression": "Ultimate-score",
-      "roll": "{1d12 + Ultimate}"
-    },
-    "Ultimate-score": {
+      "data": {},
+      "name": "WIS",
       "value": 0,
-      "type": "number",
-      "hidden": true,
-      "parent": "Ultimate"
+      "rank": 23,
+      "message": "Wisdom Roll: {1d20 + WIS}",
+      "formula": "WIS-score",
+      "characterId": 521637
     },
-    "Initiative": {
-      "value": 0,
-      "type": "number",
-      "section": "Effort",
-      "expression": "0",
-      "roll": "{initiative = 1d20}"
-    },
-    "STR": {
-      "value": 0,
+    {
+      "id": 24067844,
+      "parentId": 24067825,
       "type": "ability",
-      "section": "abilities",
-      "expression": "STR-score",
-      "roll": "{1d20 + STR}"
-    },
-    "STR-score": {
+      "data": {},
+      "name": "CHA",
       "value": 0,
-      "type": "number",
-      "hidden": true,
-      "parent": "STR"
+      "rank": 25,
+      "message": "Charisma Roll: {1d20 + CHA}",
+      "formula": "CHA-score",
+      "characterId": 521637
     },
-    "DEX": {
-      "value": 0,
+    {
+      "id": 24067882,
+      "parentId": 24067825,
       "type": "ability",
-      "section": "abilities",
-      "expression": "DEX-score",
-      "roll": "{1d20 + DEX}"
-    },
-    "DEX-score": {
+      "data": {},
+      "name": "DEX",
       "value": 0,
-      "type": "number",
-      "hidden": true,
-      "parent": "DEX"
+      "rank": 17,
+      "message": "Dexterity Roll: {1d20 + DEX}",
+      "formula": "DEX-score",
+      "characterId": 521637
     },
-    "CON": {
-      "value": 0,
+    {
+      "id": 24067894,
+      "parentId": 24067825,
       "type": "ability",
-      "section": "abilities",
-      "expression": "CON-score",
-      "roll": "{1d20 + CON}"
-    },
-    "CON-score": {
-      "value": 0,
-      "type": "number",
-      "hidden": true,
-      "parent": "CON"
-    },
-    "INT": {
-      "value": 0,
-      "type": "ability",
-      "section": "abilities",
-      "expression": "INT-score",
-      "roll": "{1d20 + INT}"
-    },
-    "INT-score": {
-      "value": 0,
-      "type": "number",
-      "hidden": true,
-      "parent": "INT"
-    },
-    "WIS": {
-      "value": 0,
-      "type": "ability",
-      "section": "abilities",
-      "expression": "WIS-score",
-      "roll": "{1d20 + WIS}"
-    },
-    "WIS-score": {
-      "value": 0,
-      "type": "number",
-      "hidden": true,
-      "parent": "WIS"
-    },
-    "CHA": {
-      "value": 0,
-      "type": "ability",
-      "section": "abilities",
-      "expression": "CHA-score",
-      "roll": "{1d20 + CHA}"
-    },
-    "CHA-score": {
-      "value": 0,
-      "type": "number",
-      "hidden": true,
-      "parent": "CHA"
-    },
-    "Defense": {
+      "data": {},
+      "name": "Defense",
       "value": 10,
-      "type": "ability",
-      "section": "abilities",
-      "expression": "10 + Defense-score + CON",
-      "roll": "{1d20 + Defense-score + CON}"
+      "rank": 27,
+      "message": "Defense Roll: {1d20 + Defense-score + CON}",
+      "formula": "10 + (Defense-score > 10 ? 10 : Defense-score) + CON",
+      "characterId": 521637
     },
-    "Defense-score": {
+    {
+      "id": 24067834,
+      "parentId": 24067826,
+      "type": "ability",
+      "data": {},
+      "name": "Basic",
       "value": 0,
+      "rank": 7,
+      "message": "Basic Effort: {1d4 + basic}",
+      "formula": "Basic-score",
+      "characterId": 521637
+    },
+    {
+      "id": 24067835,
+      "parentId": 24067826,
+      "type": "ability",
+      "data": {},
+      "name": "Weapons-and-Tools",
+      "value": 0,
+      "rank": 9,
+      "message": "Weapon & Tool Effort: {1d6 + Weapons-and-Tools}",
+      "formula": "Weapons-and-Tools-score",
+      "characterId": 521637
+    },
+    {
+      "id": 24067836,
+      "parentId": 24067826,
+      "type": "ability",
+      "data": {},
+      "name": "Magic",
+      "value": 0,
+      "rank": 11,
+      "message": "Magic Effort: {1d10 + Magic}",
+      "formula": "Magic-score",
+      "characterId": 521637
+    },
+    {
+      "id": 24067837,
+      "parentId": 24067826,
+      "type": "ability",
+      "data": {},
+      "name": "Ultimate",
+      "value": 0,
+      "rank": 13,
+      "message": "Ultimate Effort: {1d12 + Ultimate}",
+      "formula": "Ultimate-score",
+      "characterId": 521637
+    },
+    {
+      "id": 24067832,
+      "parentId": 24067827,
       "type": "number",
-      "hidden": true,
-      "parent": "Defense"
+      "data": {},
+      "name": "hit-points-maximum",
+      "value": 10,
+      "rank": 1,
+      "characterId": 521637
+    },
+    {
+      "id": 24067833,
+      "parentId": 24067828,
+      "type": "number",
+      "data": {},
+      "name": "Mastery-maximum",
+      "value": 20,
+      "rank": 3,
+      "formula": "20",
+      "characterId": 521637
+    },
+    {
+      "id": 24067838,
+      "parentId": 24067834,
+      "type": "number",
+      "data": {},
+      "name": "Basic-score",
+      "value": 0,
+      "rank": 8,
+      "characterId": 521637
+    },
+    {
+      "id": 24067839,
+      "parentId": 24067835,
+      "type": "number",
+      "data": {},
+      "name": "Weapons-and-Tools-score",
+      "value": 0,
+      "rank": 10,
+      "characterId": 521637
+    },
+    {
+      "id": 24067840,
+      "parentId": 24067836,
+      "type": "number",
+      "data": {},
+      "name": "Magic-score",
+      "value": 0,
+      "rank": 12,
+      "characterId": 521637
+    },
+    {
+      "id": 24067821,
+      "parentId": 24067837,
+      "type": "number",
+      "data": {},
+      "name": "Ultimate-score",
+      "value": 0,
+      "rank": 14,
+      "characterId": 521637
+    },
+    {
+      "id": 24067845,
+      "parentId": 24067823,
+      "type": "number",
+      "data": {},
+      "name": "STR-score",
+      "value": 0,
+      "rank": 17,
+      "characterId": 521637
+    },
+    {
+      "id": 24067846,
+      "parentId": 24067882,
+      "type": "number",
+      "data": {},
+      "name": "DEX-score",
+      "value": 0,
+      "rank": 19,
+      "characterId": 521637
+    },
+    {
+      "id": 24067847,
+      "parentId": 24067841,
+      "type": "number",
+      "data": {},
+      "name": "CON-score",
+      "value": 0,
+      "rank": 21,
+      "characterId": 521637
+    },
+    {
+      "id": 24067848,
+      "parentId": 24067842,
+      "type": "number",
+      "data": {},
+      "name": "INT-score",
+      "value": 0,
+      "rank": 23,
+      "characterId": 521637
+    },
+    {
+      "id": 24067849,
+      "parentId": 24067843,
+      "type": "number",
+      "data": {},
+      "name": "WIS-score",
+      "value": 0,
+      "rank": 25,
+      "characterId": 521637
+    },
+    {
+      "id": 24067850,
+      "parentId": 24067844,
+      "type": "number",
+      "data": {},
+      "name": "CHA-score",
+      "value": 0,
+      "rank": 27,
+      "characterId": 521637
+    },
+    {
+      "id": 24067851,
+      "parentId": 24067894,
+      "type": "number",
+      "data": {},
+      "name": "Defense-score",
+      "value": 0,
+      "rank": 29,
+      "characterId": 521637
+    },
+    {
+      "id": 24067855,
+      "parentId": 24067854,
+      "type": "text",
+      "data": null,
+      "name": "loot-name-1",
+      "value": "",
+      "rank": -19,
+      "characterId": 521637
+    },
+    {
+      "id": 24067856,
+      "parentId": 24067854,
+      "type": "paragraph",
+      "data": null,
+      "value": "<p>LOOT Description...</p>",
+      "rank": -18,
+      "characterId": 521637
+    },
+    {
+      "id": 24067857,
+      "parentId": 24067854,
+      "type": "checkboxes",
+      "data": null,
+      "name": "👜/ ✋",
+      "value": 0,
+      "rank": -17,
+      "characterId": 521637
+    },
+    {
+      "id": 24067859,
+      "parentId": 24067854,
+      "type": "text",
+      "data": null,
+      "name": "loot-name-2",
+      "rank": -16,
+      "characterId": 521637
+    },
+    {
+      "id": 24067860,
+      "parentId": 24067854,
+      "type": "paragraph",
+      "data": null,
+      "value": "<p>LOOT Description...</p>",
+      "rank": -15,
+      "characterId": 521637
+    },
+    {
+      "id": 24067861,
+      "parentId": 24067854,
+      "type": "checkboxes",
+      "data": null,
+      "name": "👜/ ✋",
+      "value": 0,
+      "rank": -14,
+      "characterId": 521637
+    },
+    {
+      "id": 24067862,
+      "parentId": 24067854,
+      "type": "text",
+      "data": null,
+      "name": "loot-name-3",
+      "rank": -13,
+      "characterId": 521637
+    },
+    {
+      "id": 24067863,
+      "parentId": 24067854,
+      "type": "paragraph",
+      "data": null,
+      "value": "<p>LOOT Description...</p>",
+      "rank": -12,
+      "characterId": 521637
+    },
+    {
+      "id": 24067864,
+      "parentId": 24067854,
+      "type": "checkboxes",
+      "data": null,
+      "name": "👜/ ✋",
+      "value": 0,
+      "rank": -11,
+      "characterId": 521637
+    },
+    {
+      "id": 24067866,
+      "parentId": 24067854,
+      "type": "text",
+      "data": null,
+      "name": "loot-name-4",
+      "rank": -10,
+      "characterId": 521637
+    },
+    {
+      "id": 24067867,
+      "parentId": 24067854,
+      "type": "paragraph",
+      "data": null,
+      "value": "<p>LOOT Description...</p>",
+      "rank": -9,
+      "characterId": 521637
+    },
+    {
+      "id": 24067868,
+      "parentId": 24067854,
+      "type": "checkboxes",
+      "data": null,
+      "name": "👜/ ✋",
+      "value": 0,
+      "rank": -8,
+      "characterId": 521637
+    },
+    {
+      "id": 24067870,
+      "parentId": 24067854,
+      "type": "text",
+      "data": null,
+      "name": "loot-name-5",
+      "rank": -7,
+      "characterId": 521637
+    },
+    {
+      "id": 24067871,
+      "parentId": 24067854,
+      "type": "paragraph",
+      "data": null,
+      "value": "<p>LOOT Description...</p>",
+      "rank": -6,
+      "characterId": 521637
+    },
+    {
+      "id": 24067872,
+      "parentId": 24067854,
+      "type": "checkboxes",
+      "data": null,
+      "name": "👜/ ✋",
+      "value": 0,
+      "rank": -5,
+      "characterId": 521637
+    },
+    {
+      "id": 24067874,
+      "parentId": 24067854,
+      "type": "text",
+      "data": null,
+      "name": "loot-name-6",
+      "rank": -4,
+      "characterId": 521637
+    },
+    {
+      "id": 24067875,
+      "parentId": 24067854,
+      "type": "paragraph",
+      "data": null,
+      "value": "<p>LOOT Description...</p>",
+      "rank": -3,
+      "characterId": 521637
+    },
+    {
+      "id": 24067876,
+      "parentId": 24067854,
+      "type": "checkboxes",
+      "data": null,
+      "name": "👜/ ✋",
+      "value": 0,
+      "rank": -2,
+      "characterId": 521637
+    },
+    {
+      "id": 24067858,
+      "parentId": 24069045,
+      "type": "number",
+      "data": null,
+      "name": "👜/_✋-max",
+      "value": 2,
+      "rank": 1,
+      "formula": "2",
+      "characterId": 521637
+    },
+    {
+      "id": 24067824,
+      "parentId": 24067878,
+      "type": "appearance",
+      "data": {
+        "appearances": []
+      },
+      "rank": 12,
+      "characterId": 521637
+    },
+    {
+      "id": 24067880,
+      "parentId": 24067879,
+      "type": "section",
+      "data": null,
+      "rank": 0,
+      "size": 50,
+      "characterId": 521637
+    },
+    {
+      "id": 24067881,
+      "parentId": 24067879,
+      "type": "section",
+      "data": null,
+      "rank": 1,
+      "size": 50,
+      "characterId": 521637
+    },
+    {
+      "id": 24067825,
+      "parentId": 24067880,
+      "type": "title-section",
+      "data": null,
+      "value": "Abilities",
+      "rank": 1,
+      "characterId": 521637
+    },
+    {
+      "id": 24067826,
+      "parentId": 24067881,
+      "type": "title-section",
+      "data": null,
+      "value": "Effort",
+      "rank": 0,
+      "characterId": 521637
+    },
+    {
+      "id": 24067828,
+      "parentId": 24067883,
+      "type": "health",
+      "data": {},
+      "name": "Mastery",
+      "value": 0,
+      "rank": 0,
+      "characterId": 521637
+    },
+    {
+      "id": 24067822,
+      "parentId": 24067884,
+      "type": "number",
+      "data": {},
+      "name": "Initiative 🏃",
+      "value": "error",
+      "rank": -3,
+      "message": "{initiative = 1d20}",
+      "formula": "-",
+      "characterId": 521637
+    },
+    {
+      "id": 24067883,
+      "parentId": 24067884,
+      "type": "title-section",
+      "data": null,
+      "value": "Mastery",
+      "rank": -2,
+      "characterId": 521637
+    },
+    {
+      "id": 24067902,
+      "parentId": 24067884,
+      "type": "title-section",
+      "data": {
+        "collapsed": false
+      },
+      "value": "Abilities",
+      "rank": -3,
+      "characterId": 521637
+    },
+    {
+      "id": 24067887,
+      "parentId": 24067886,
+      "type": "horizontal-section",
+      "data": null,
+      "rank": 1,
+      "characterId": 521637
+    },
+    {
+      "id": 24067888,
+      "parentId": 24067887,
+      "type": "section",
+      "data": null,
+      "rank": 0,
+      "size": 50,
+      "characterId": 521637
+    },
+    {
+      "id": 24067889,
+      "parentId": 24067887,
+      "type": "section",
+      "data": null,
+      "rank": 1,
+      "size": 50,
+      "characterId": 521637
+    },
+    {
+      "id": 24067827,
+      "parentId": 24067888,
+      "type": "health",
+      "data": {},
+      "name": "hit-points",
+      "value": 10,
+      "rank": 0,
+      "characterId": 521637
+    },
+    {
+      "id": 24067900,
+      "parentId": 24067888,
+      "type": "message",
+      "data": null,
+      "name": "DontDieOnMe 🤕",
+      "icon": "/images/message.png",
+      "rank": 2,
+      "message": "Don't Die on Me: Stabilize a fallen ally by touching them and making an INT or WIS roll. This stops their DYING timer.",
+      "characterId": 521637
+    },
+    {
+      "id": 24067901,
+      "parentId": 24067888,
+      "type": "message",
+      "data": null,
+      "name": "Recover 🩹",
+      "icon": "https://tableplop-files-prod.nyc3.cdn.digitaloceanspaces.com/4b6dafff5d9e1314e79a9f9e4d12938a.png",
+      "rank": 1,
+      "message": "Recover: After succeeding on a CON check, recover {CON + 1} HP.\n\nNew HP total: {hit-points = hit-points + (CON + 1)}.\nRounding to the limit: {hit-points = (hit-points > hit-points-max ? hit-points-max : hit-points)}.",
+      "characterId": 521637
+    },
+    {
+      "id": 24067890,
+      "parentId": 24067889,
+      "type": "checkboxes",
+      "data": null,
+      "name": "DeathTimer",
+      "value": 0,
+      "rank": 0,
+      "message": "I have fallen, I will die in {deathtimer-max = 1d4} rounds! Resetting failed death rolls to {deathtimer = 0}",
+      "characterId": 521637
+    },
+    {
+      "id": 24067892,
+      "parentId": 24067889,
+      "type": "message",
+      "data": null,
+      "name": "Death Save ☠️",
+      "icon": "/images/message.png",
+      "rank": 1,
+      "message": "Make a Miracle: {death-save = 1d20}\nResult: {(death-save > 19 ?  \"Miracle!\"  : \"Failure\")}\n{DeathTimer = (death-save < 20 ?  (DeathTimer + 1)  : 0)} failed death saves out of {DeathTimer-Max}.\n{hit-points = (death-save > 19 ?  1  : 0)}  hit points remaining.",
+      "characterId": 521637
+    },
+    {
+      "id": 24067893,
+      "parentId": 24067889,
+      "type": "number",
+      "data": null,
+      "name": "death-save",
+      "value": 0,
+      "rank": 2,
+      "characterId": 521637
+    },
+    {
+      "id": 24067891,
+      "parentId": 24067890,
+      "type": "number",
+      "data": null,
+      "name": "deathtimer-max",
+      "value": 2,
+      "rank": 1,
+      "characterId": 521637
+    },
+    {
+      "id": 24067898,
+      "parentId": 24067897,
+      "type": "section",
+      "data": null,
+      "rank": 0,
+      "size": 50,
+      "characterId": 521637
+    },
+    {
+      "id": 24067899,
+      "parentId": 24067897,
+      "type": "section",
+      "data": null,
+      "rank": 1,
+      "size": 50,
+      "characterId": 521637
+    },
+    {
+      "id": 24067830,
+      "parentId": 24067898,
+      "type": "text",
+      "data": {},
+      "name": "Type",
+      "value": "",
+      "rank": 0,
+      "characterId": 521637
+    },
+    {
+      "id": 24067831,
+      "parentId": 24067898,
+      "type": "text",
+      "data": {},
+      "name": "Life-Form",
+      "value": "",
+      "rank": 1,
+      "characterId": 521637
+    },
+    {
+      "id": 24067895,
+      "parentId": 24067899,
+      "type": "heading",
+      "data": null,
+      "value": "📜Background",
+      "rank": 0,
+      "characterId": 521637
+    },
+    {
+      "id": 24067896,
+      "parentId": 24067899,
+      "type": "paragraph",
+      "data": null,
+      "value": "<p>Without my dungeon master, I was lost and confused. Luckily, one day....</p>",
+      "rank": 1,
+      "characterId": 521637
+    },
+    {
+      "id": 24067903,
+      "parentId": 24067902,
+      "type": "table",
+      "data": {
+        "headers": [
+          "Name",
+          "Description"
+        ]
+      },
+      "rank": 0,
+      "characterId": 521637
+    },
+    {
+      "id": 24067904,
+      "parentId": 24067903,
+      "type": "text",
+      "data": null,
+      "name": "ability-name-1",
+      "value": "",
+      "rank": 0,
+      "message": "",
+      "characterId": 521637
+    },
+    {
+      "id": 24067905,
+      "parentId": 24067903,
+      "type": "paragraph",
+      "data": null,
+      "value": "<p>Ability Description...</p>",
+      "rank": 0,
+      "characterId": 521637
+    },
+    {
+      "id": 24067906,
+      "parentId": 24067903,
+      "type": "text",
+      "data": null,
+      "name": "ability-name-2",
+      "rank": 0,
+      "characterId": 521637
+    },
+    {
+      "id": 24067907,
+      "parentId": 24067903,
+      "type": "paragraph",
+      "data": null,
+      "value": "<p>Ability Description...</p>",
+      "rank": 0,
+      "characterId": 521637
+    },
+    {
+      "id": 24067908,
+      "parentId": 24067903,
+      "type": "text",
+      "data": null,
+      "name": "ability-name-3",
+      "rank": 0,
+      "characterId": 521637
+    },
+    {
+      "id": 24067909,
+      "parentId": 24067903,
+      "type": "paragraph",
+      "data": null,
+      "value": "<p>Ability Description...</p>",
+      "rank": 0,
+      "characterId": 521637
+    },
+    {
+      "id": 24067910,
+      "parentId": 24067903,
+      "type": "text",
+      "data": null,
+      "name": "ability-name-4",
+      "rank": 1,
+      "characterId": 521637
+    },
+    {
+      "id": 24067911,
+      "parentId": 24067903,
+      "type": "paragraph",
+      "data": null,
+      "value": "<p>Ability Description...</p>",
+      "rank": 1,
+      "characterId": 521637
+    },
+    {
+      "id": 24067912,
+      "parentId": 24067903,
+      "type": "text",
+      "data": null,
+      "name": "ability-name-5",
+      "rank": 1,
+      "characterId": 521637
+    },
+    {
+      "id": 24067913,
+      "parentId": 24067903,
+      "type": "paragraph",
+      "data": null,
+      "value": "<p>Ability Description...</p>",
+      "rank": 1,
+      "characterId": 521637
+    },
+    {
+      "id": 24067865,
+      "parentId": 24069045,
+      "type": "number",
+      "data": null,
+      "name": "👜/_✋-max",
+      "value": 2,
+      "rank": 1,
+      "formula": "2",
+      "characterId": 521637
+    },
+    {
+      "id": 24067869,
+      "parentId": 24069045,
+      "type": "number",
+      "data": null,
+      "name": "👜/_✋-max",
+      "value": 2,
+      "rank": 1,
+      "formula": "2",
+      "characterId": 521637
+    },
+    {
+      "id": 24067873,
+      "parentId": 24069045,
+      "type": "number",
+      "data": null,
+      "name": "👜/_✋-max",
+      "value": 2,
+      "rank": 1,
+      "formula": "2",
+      "characterId": 521637
+    },
+    {
+      "id": 24067877,
+      "parentId": 24069045,
+      "type": "number",
+      "data": null,
+      "name": "👜/_✋-max",
+      "value": 2,
+      "rank": 1,
+      "formula": "2",
+      "characterId": 521637
+    },
+    {
+      "id": 24067852,
+      "parentId": null,
+      "type": "tab-section",
+      "data": null,
+      "value": "Loot",
+      "rank": 2,
+      "characterId": 521637
+    },
+    {
+      "id": 24067878,
+      "parentId": null,
+      "type": "tab-section",
+      "data": null,
+      "value": "Info",
+      "rank": 3,
+      "characterId": 521637
+    },
+    {
+      "id": 24067884,
+      "parentId": null,
+      "type": "tab-section",
+      "data": null,
+      "value": "Abilities",
+      "rank": 1,
+      "characterId": 521637
+    },
+    {
+      "id": 24067885,
+      "parentId": null,
+      "type": "tab-section",
+      "data": null,
+      "value": "Stats",
+      "rank": 0,
+      "characterId": 521637
+    },
+    {
+      "id": 24069030,
+      "parentId": 24067854,
+      "type": "text",
+      "data": null,
+      "name": "loot-name-7",
+      "rank": -1,
+      "characterId": 521637
+    },
+    {
+      "id": 24069032,
+      "parentId": 24067854,
+      "type": "checkboxes",
+      "data": null,
+      "name": "👜/ ✋",
+      "value": 0,
+      "rank": 1,
+      "characterId": 521637
+    },
+    {
+      "id": 24069033,
+      "parentId": 24069045,
+      "type": "number",
+      "data": null,
+      "name": "👜/_✋-max",
+      "value": 2,
+      "rank": 1,
+      "formula": "2",
+      "characterId": 521637
+    },
+    {
+      "id": 24069031,
+      "parentId": 24067854,
+      "type": "paragraph",
+      "data": null,
+      "value": "<p>LOOT Description...</p>",
+      "rank": 0,
+      "characterId": 521637
+    },
+    {
+      "id": 24069034,
+      "parentId": 24067854,
+      "type": "text",
+      "data": null,
+      "name": "loot-name-8",
+      "rank": 2,
+      "characterId": 521637
+    },
+    {
+      "id": 24069035,
+      "parentId": 24067854,
+      "type": "paragraph",
+      "data": null,
+      "value": "<p>LOOT Description...</p>",
+      "rank": 3,
+      "characterId": 521637
+    },
+    {
+      "id": 24069037,
+      "parentId": 24067854,
+      "type": "checkboxes",
+      "data": null,
+      "name": "👜/ ✋",
+      "value": 0,
+      "rank": 4,
+      "characterId": 521637
+    },
+    {
+      "id": 24069038,
+      "parentId": 24069045,
+      "type": "number",
+      "data": null,
+      "name": "👜/_✋-max",
+      "value": 2,
+      "rank": 1,
+      "formula": "2",
+      "characterId": 521637
+    },
+    {
+      "id": 24069040,
+      "parentId": 24067854,
+      "type": "paragraph",
+      "data": null,
+      "value": "<p>LOOT Description...</p>",
+      "rank": 6,
+      "characterId": 521637
+    },
+    {
+      "id": 24069039,
+      "parentId": 24067854,
+      "type": "text",
+      "data": null,
+      "name": "loot-name-9",
+      "rank": 5,
+      "characterId": 521637
+    },
+    {
+      "id": 24069041,
+      "parentId": 24067854,
+      "type": "checkboxes",
+      "data": null,
+      "name": "👜/ ✋",
+      "value": 0,
+      "rank": 7,
+      "characterId": 521637
+    },
+    {
+      "id": 24069042,
+      "parentId": 24069045,
+      "type": "number",
+      "data": null,
+      "name": "👜/_✋-max",
+      "value": 2,
+      "rank": 1,
+      "formula": "2",
+      "characterId": 521637
+    },
+    {
+      "id": 24069043,
+      "parentId": 24067854,
+      "type": "text",
+      "data": null,
+      "name": "loot-name-10",
+      "rank": 8,
+      "characterId": 521637
+    },
+    {
+      "id": 24069044,
+      "parentId": 24067854,
+      "type": "paragraph",
+      "data": null,
+      "value": "<p>LOOT Description...</p>",
+      "rank": 9,
+      "characterId": 521637
+    },
+    {
+      "id": 24069045,
+      "parentId": 24067854,
+      "type": "checkboxes",
+      "data": null,
+      "name": "👜/ ✋",
+      "value": 0,
+      "rank": 10,
+      "characterId": 521637
+    },
+    {
+      "id": 24069046,
+      "parentId": 24069045,
+      "type": "number",
+      "data": null,
+      "name": "👜/_✋-max",
+      "value": 2,
+      "rank": 1,
+      "formula": "2",
+      "characterId": 521637
     }
-  },
-  "info": {
-    "description": "",
-    "notes": "<p>&nbsp;</p>",
-    "sections": [
-      {
-        "name": "abilities",
-        "position": "left",
-        "tab": 1
-      },
-      {
-        "name": "Effort",
-        "position": "left",
-        "tab": 2,
-        "savedMessages": false
-      },
-      {
-        "name": "info",
-        "position": "left",
-        "tab": 3
-      },
-      {
-        "name": "details",
-        "position": "left",
-        "tab": 3
-      },
-      {
-        "name": "messages",
-        "position": "bottom",
-        "tab": 4,
-        "savedMessages": true
-      }
-    ]
-  },
-  "appearances": [],
-  "savedMessages": []
+  ],
+  "private": false,
+  "type": "tableplop-character-v2"
 }
