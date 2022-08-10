@@ -1,426 +1,425 @@
 {
   "properties": [
     {
-      "id": 24151727,
+      "id": 24155802,
       "parentId": null,
       "type": "tab-section",
       "data": {},
       "value": "Stats",
       "rank": 1,
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151730,
-      "parentId": 24151769,
-      "type": "title-section",
-      "data": {},
-      "value": "Abilities",
-      "rank": 0,
-      "characterId": 522681
-    },
-    {
-      "id": 24151731,
-      "parentId": 24151730,
+      "id": 24155804,
+      "parentId": 24155803,
       "type": "ability",
       "data": {},
       "name": "STR",
       "value": 0,
       "rank": 11,
-      "message": "{1d20 + STR}",
+      "message": "Strength Check: {1d20 + STR}",
       "formula": "STR-score",
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151732,
-      "parentId": 24151731,
+      "id": 24155805,
+      "parentId": 24155804,
       "type": "number",
       "data": {},
       "name": "STR-score",
       "value": 0,
       "rank": 12,
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151734,
-      "parentId": 24151733,
+      "id": 24155806,
+      "parentId": 24155828,
       "type": "number",
       "data": {},
       "name": "DEX-score",
       "value": 0,
       "rank": 14,
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151736,
-      "parentId": 24151735,
+      "id": 24155807,
+      "parentId": 24155829,
       "type": "number",
       "data": {},
       "name": "CON-score",
       "value": 0,
       "rank": 16,
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151738,
-      "parentId": 24151737,
+      "id": 24155808,
+      "parentId": 24155830,
       "type": "number",
       "data": {},
       "name": "INT-score",
       "value": 0,
       "rank": 18,
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151740,
-      "parentId": 24151739,
+      "id": 24155809,
+      "parentId": 24155831,
       "type": "number",
       "data": {},
       "name": "WIS-score",
       "value": 0,
       "rank": 20,
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151742,
-      "parentId": 24151741,
+      "id": 24155810,
+      "parentId": 24155832,
       "type": "number",
       "data": {},
       "name": "CHA-score",
       "value": 0,
       "rank": 22,
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151744,
-      "parentId": 24151743,
+      "id": 24155811,
+      "parentId": 24155826,
       "type": "ability",
       "data": {},
       "name": "Basic",
       "value": 0,
       "rank": 3,
-      "message": "{1d4 + basic}",
+      "message": "Basic Effort: {1d4 + basic}",
       "formula": "Basic-score",
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151745,
-      "parentId": 24151744,
+      "id": 24155812,
+      "parentId": 24155811,
       "type": "number",
       "data": {},
       "name": "Basic-score",
       "value": 0,
       "rank": 4,
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151746,
-      "parentId": 24151743,
+      "id": 24155813,
+      "parentId": 24155826,
       "type": "ability",
       "data": {},
       "name": "Weapons-and-Tools",
       "value": 0,
       "rank": 5,
-      "message": "{1d6 + Weapons-and-Tools}",
+      "message": "Weapon and Tools Effort: {1d6 + Weapons-and-Tools}",
       "formula": "Weapons-and-Tools-score",
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151747,
-      "parentId": 24151746,
+      "id": 24155814,
+      "parentId": 24155813,
       "type": "number",
       "data": {},
       "name": "Weapons-and-Tools-score",
       "value": 0,
       "rank": 6,
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151748,
-      "parentId": 24151743,
+      "id": 24155815,
+      "parentId": 24155826,
       "type": "ability",
       "data": {},
       "name": "Magic",
       "value": 0,
       "rank": 7,
-      "message": "{1d10 + Magic}",
+      "message": "Magic Effort: {1d10 + Magic}",
       "formula": "Magic-score",
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151749,
-      "parentId": 24151748,
+      "id": 24155816,
+      "parentId": 24155815,
       "type": "number",
       "data": {},
       "name": "Magic-score",
       "value": 0,
       "rank": 8,
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151751,
-      "parentId": 24151750,
+      "id": 24155817,
+      "parentId": 24155833,
       "type": "number",
       "data": {},
       "name": "Ultimate-score",
       "value": 0,
       "rank": 10,
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151753,
-      "parentId": 24151773,
+      "id": 24155818,
+      "parentId": 24155841,
       "type": "health",
       "data": {},
       "name": "hit-points",
       "local": true,
       "value": 10,
       "rank": 0,
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151754,
-      "parentId": 24151753,
+      "id": 24155819,
+      "parentId": 24155818,
       "type": "number",
       "data": {},
       "name": "hit-points-maximum",
       "value": 10,
       "rank": 1,
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151755,
-      "parentId": 24151774,
+      "id": 24155820,
+      "parentId": 24155842,
       "type": "text",
       "data": {},
       "name": "Life-Form",
       "value": "",
       "rank": 1,
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151757,
-      "parentId": 24151774,
+      "id": 24155821,
+      "parentId": 24155842,
       "type": "title-section",
       "data": {
         "collapsed": false
       },
       "value": "Description (public)",
       "rank": 0,
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151758,
-      "parentId": 24151757,
+      "id": 24155822,
+      "parentId": 24155821,
       "type": "paragraph",
       "data": {},
       "value": "<p>&nbsp;</p>",
       "rank": 0,
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151761,
-      "parentId": 24151752,
+      "id": 24155823,
+      "parentId": 24155827,
       "type": "appearance",
       "data": {
         "appearances": []
       },
       "value": "",
       "rank": 1,
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151763,
+      "id": 24155824,
       "parentId": null,
       "type": "tab-section",
       "data": {},
       "value": "Actions",
       "rank": 2,
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151764,
-      "parentId": 24151763,
+      "id": 24155825,
+      "parentId": 24155824,
       "type": "title-section",
       "data": {},
       "value": "Messages",
       "rank": 0,
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151743,
-      "parentId": 24151770,
+      "id": 24155826,
+      "parentId": 24155838,
       "type": "title-section",
       "data": {},
       "value": "Effort",
       "rank": 0,
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151752,
-      "parentId": 24151771,
+      "id": 24155827,
+      "parentId": 24155839,
       "type": "title-section",
       "data": {},
       "value": "Info",
       "rank": 2,
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151733,
-      "parentId": 24151730,
+      "id": 24155828,
+      "parentId": 24155803,
       "type": "ability",
       "data": {},
       "name": "DEX",
       "value": 0,
       "rank": 13,
-      "message": "{1d20 + DEX}",
+      "message": "Dexterity Check: {1d20 + DEX}",
       "formula": "DEX-score",
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151735,
-      "parentId": 24151730,
-      "type": "ability",
-      "data": {},
-      "name": "CON",
-      "value": 0,
-      "rank": 15,
-      "message": "{1d20 + CON}",
-      "formula": "CON-score",
-      "characterId": 522681
-    },
-    {
-      "id": 24151737,
-      "parentId": 24151730,
-      "type": "ability",
-      "data": {},
-      "name": "INT",
-      "value": 0,
-      "rank": 17,
-      "message": "{1d20 + INT}",
-      "formula": "INT-score",
-      "characterId": 522681
-    },
-    {
-      "id": 24151739,
-      "parentId": 24151730,
-      "type": "ability",
-      "data": {},
-      "name": "WIS",
-      "value": 0,
-      "rank": 19,
-      "message": "{1d20 + WIS}",
-      "formula": "WIS-score",
-      "characterId": 522681
-    },
-    {
-      "id": 24151741,
-      "parentId": 24151730,
-      "type": "ability",
-      "data": {},
-      "name": "CHA",
-      "value": 0,
-      "rank": 21,
-      "message": "{1d20 + CHA}",
-      "formula": "CHA-score",
-      "characterId": 522681
-    },
-    {
-      "id": 24151750,
-      "parentId": 24151743,
+      "id": 24155833,
+      "parentId": 24155826,
       "type": "ability",
       "data": {},
       "name": "Ultimate",
       "value": 0,
       "rank": 9,
-      "message": "{1d12 + Ultimate}",
+      "message": "Ultimate Effort: {1d12 + Ultimate}",
       "formula": "Ultimate-score",
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151765,
-      "parentId": 24151764,
+      "id": 24155834,
+      "parentId": 24155825,
       "type": "message",
       "data": null,
       "name": "Spiked Club",
       "icon": "/images/message.png",
       "rank": 0,
       "message": "SPIKED CLUB: {1d20 + STR} , Weapon Damage ({1d6 + Weapons-and-Tools}) with a NEAR reach. Even on a missed Attack, the spiked club inflicts {3} Damage on its target.",
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151766,
-      "parentId": 24151764,
+      "id": 24155835,
+      "parentId": 24155825,
       "type": "message",
       "data": null,
       "name": "Body Slam",
       "icon": "/images/message.png",
       "rank": 1,
       "message": "BODY SLAM: Roll DEX or suffer DOUBLE Weapon Damage ({(1d6 + Weapons-and-Tools)*2}) / immobilized under the creature.",
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151768,
-      "parentId": 24151727,
+      "id": 24155836,
+      "parentId": 24155802,
       "type": "horizontal-section",
       "data": null,
       "rank": 3,
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151769,
-      "parentId": 24151768,
+      "id": 24155837,
+      "parentId": 24155836,
       "type": "section",
       "data": null,
       "rank": 0,
       "size": 50,
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151770,
-      "parentId": 24151768,
+      "id": 24155838,
+      "parentId": 24155836,
       "type": "section",
       "data": null,
       "rank": 1,
       "size": 50,
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151771,
+      "id": 24155839,
       "parentId": null,
       "type": "tab-section",
       "data": null,
       "value": "Info",
       "rank": 3,
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151772,
-      "parentId": 24151752,
+      "id": 24155840,
+      "parentId": 24155827,
       "type": "horizontal-section",
       "data": null,
       "rank": 0,
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151773,
-      "parentId": 24151772,
+      "id": 24155841,
+      "parentId": 24155840,
       "type": "section",
       "data": null,
       "rank": 0,
       "size": 50,
-      "characterId": 522681
+      "characterId": 522718
     },
     {
-      "id": 24151774,
-      "parentId": 24151772,
+      "id": 24155842,
+      "parentId": 24155840,
       "type": "section",
       "data": null,
       "rank": 1,
       "size": 50,
-      "characterId": 522681
+      "characterId": 522718
+    },
+    {
+      "id": 24155829,
+      "parentId": 24155803,
+      "type": "ability",
+      "data": {},
+      "name": "CON",
+      "value": 0,
+      "rank": 15,
+      "message": "Constitution Check: {1d20 + CON}",
+      "formula": "CON-score",
+      "characterId": 522718
+    },
+    {
+      "id": 24155830,
+      "parentId": 24155803,
+      "type": "ability",
+      "data": {},
+      "name": "INT",
+      "value": 0,
+      "rank": 17,
+      "message": "Intelligence Check: {1d20 + INT}",
+      "formula": "INT-score",
+      "characterId": 522718
+    },
+    {
+      "id": 24155831,
+      "parentId": 24155803,
+      "type": "ability",
+      "data": {},
+      "name": "WIS",
+      "value": 0,
+      "rank": 19,
+      "message": "Wisdom Check: {1d20 + WIS}",
+      "formula": "WIS-score",
+      "characterId": 522718
+    },
+    {
+      "id": 24155832,
+      "parentId": 24155803,
+      "type": "ability",
+      "data": {},
+      "name": "CHA",
+      "value": 0,
+      "rank": 21,
+      "message": "Charisma Check: {1d20 + CHA}",
+      "formula": "CHA-score",
+      "characterId": 522718
+    },
+    {
+      "id": 24155803,
+      "parentId": 24155837,
+      "type": "title-section",
+      "data": {},
+      "value": "Abilities",
+      "rank": 0,
+      "characterId": 522718
     }
   ],
-  "appearance": null,
   "private": true,
   "type": "tableplop-character-v2"
 }
