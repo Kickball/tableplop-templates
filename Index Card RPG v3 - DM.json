@@ -1,26 +1,26 @@
 {
   "properties": [
     {
-      "id": 98291,
+      "id": 24154792,
       "parentId": null,
       "type": "tab-section",
       "data": {},
-      "value": "DM",
+      "value": "Info",
       "rank": 1,
-      "characterId": 191324
+      "characterId": 522715
     },
     {
-      "id": 98294,
-      "parentId": 98291,
+      "id": 24154793,
+      "parentId": 24154792,
       "type": "title-section",
       "data": {},
       "value": "Info",
       "rank": 0,
-      "characterId": 191324
+      "characterId": 522715
     },
     {
-      "id": 98295,
-      "parentId": 98294,
+      "id": 24154794,
+      "parentId": 24154793,
       "type": "number",
       "data": {},
       "name": "Initiative",
@@ -28,11 +28,11 @@
       "rank": -1,
       "message": "{initiative = 1d20}",
       "formula": "0",
-      "characterId": 191324
+      "characterId": 522715
     },
     {
-      "id": 98302,
-      "parentId": 98294,
+      "id": 24154795,
+      "parentId": 24154793,
       "type": "appearance",
       "data": {
         "appearances": [
@@ -444,10 +444,116 @@
       },
       "value": "",
       "rank": 1,
-      "characterId": 191324
+      "characterId": 522715
+    },
+    {
+      "id": 24154801,
+      "parentId": 24154951,
+      "type": "title-section",
+      "data": null,
+      "value": "Effort",
+      "rank": 2,
+      "characterId": 522715
+    },
+    {
+      "id": 24154802,
+      "parentId": 24154801,
+      "type": "ability",
+      "data": null,
+      "name": "Basic",
+      "value": 0,
+      "rank": 0,
+      "message": "Basic Effort: {1d4 + basic}",
+      "formula": "Basic-score",
+      "characterId": 522715
+    },
+    {
+      "id": 24154803,
+      "parentId": 24154802,
+      "type": "number",
+      "data": null,
+      "name": "basic-score",
+      "value": 0,
+      "rank": 0,
+      "characterId": 522715
+    },
+    {
+      "id": 24154951,
+      "parentId": null,
+      "type": "tab-section",
+      "data": null,
+      "value": "Effort",
+      "rank": 2,
+      "characterId": 522715
+    },
+    {
+      "id": 24154804,
+      "parentId": 24154801,
+      "type": "ability",
+      "data": null,
+      "name": "Weapons-and-Tools",
+      "value": 0,
+      "rank": 1,
+      "message": "Weapon & Tool Effort: {1d6 + Weapons-and-Tools}",
+      "formula": "Weapons-and-Tools-score",
+      "characterId": 522715
+    },
+    {
+      "id": 24154805,
+      "parentId": 24154804,
+      "type": "number",
+      "data": null,
+      "name": "weapons-and-tools-score",
+      "value": 0,
+      "rank": 0,
+      "characterId": 522715
+    },
+    {
+      "id": 24154806,
+      "parentId": 24154801,
+      "type": "ability",
+      "data": null,
+      "name": "Magic",
+      "value": 0,
+      "rank": 2,
+      "message": "Magic Effort: {1d10 + Magic}",
+      "formula": "Magic-score",
+      "characterId": 522715
+    },
+    {
+      "id": 24154807,
+      "parentId": 24154806,
+      "type": "number",
+      "data": null,
+      "name": "magic-score",
+      "value": 0,
+      "rank": 0,
+      "characterId": 522715
+    },
+    {
+      "id": 24154808,
+      "parentId": 24154801,
+      "type": "ability",
+      "data": null,
+      "name": "Ultimate",
+      "value": 0,
+      "rank": 3,
+      "message": "Ultimate Effort: {1d12 + Ultimate}",
+      "formula": "Ultimate-score",
+      "characterId": 522715
+    },
+    {
+      "id": 24154809,
+      "parentId": 24154808,
+      "type": "number",
+      "data": null,
+      "name": "ultimate-score",
+      "value": 0,
+      "rank": 0,
+      "characterId": 522715
     }
   ],
-  "appearance": "https://tableplop-files-prod.nyc3.cdn.digitaloceanspaces.com/a2c6ac62b11d892f772bb09a8ddaff3f.png",
+  "appearance": "https://tableplop-files-prod.nyc3.cdn.digitaloceanspaces.com/97b255b006a8e1fb16e752c5c2969b36.png",
   "private": true,
   "type": "tableplop-character-v2"
 }
